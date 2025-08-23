@@ -1,0 +1,33 @@
+"""Hybrid search interface for Qdrant-backed RAG.
+
+This is a scaffold; implement actual dense+sparse search in step 3.
+"""
+
+from typing import Any, Dict, List, Optional
+
+
+class HybridSearcher:
+    def __init__(self, qdrant_client: Any, collection_name: str):
+        self.client = qdrant_client
+        self.collection = collection_name
+
+    def hybrid_search(
+        self,
+        query: str,
+        top_k: int = 30,
+        sparse_weight: float = 0.5,
+        filters: Optional[Dict[str, Any]] = None,
+    ) -> List[Dict[str, Any]]:
+        """Placeholder method for hybrid search.
+
+        Returns an empty list for now; to be implemented in step 3.
+        """
+        _ = (query, top_k, sparse_weight, filters)
+        return []
+
+    def group_by_parent(self, search_results: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Placeholder grouping by `parent_id`.
+
+        Returns input unchanged until real logic is added in step 3.
+        """
+        return search_results

@@ -1,0 +1,210 @@
+2025-08-23 12:41:05,212 - __main__ - INFO - 🌐 병원 검색 백엔드 시작: http://0.0.0.0:8002
+2025-08-23 12:41:05,223 - main - INFO - 🚀 병원 검색 백엔드 초기화 시작...
+2025-08-23 12:41:05,223 - main - INFO - 📦 RAG 파이프라인 생성 중...
+2025-08-23 12:41:05,696 - httpx - INFO - HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-08-23 12:41:07,204 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: mps
+2025-08-23 12:41:08,409 - main - INFO - ✅ 백엔드 초기화 완료!
+2025-08-23 12:44:12,145 - main - INFO - [req_1755920652145] FT XML 검색 요청: rerank_mode=ce
+2025-08-23 12:44:12,146 - main - INFO - [req_1755920652145] XML 파싱 시작...
+2025-08-23 12:44:12,147 - main - INFO - [req_1755920652145] 파이프라인 실행 시작...
+2025-08-23 12:44:12,147 - main - ERROR - [req_1755920652145] 검색 오류: HospitalRAGPipeline.search_from_ft_xml() got an unexpected keyword argument 'xml_content'
+2025-08-23 12:44:12,148 - main - ERROR - Traceback (most recent call last):
+  File "/Users/doriankim/Documents/병원리스트 임베딩/피부과 데이터 jsonl 정리/hospital-search-backend/main.py", line 217, in search_ft_xml
+    results_data = pipeline.search_from_ft_xml(
+        xml_content=request.xml,
+    ...<2 lines>...
+        final_top_k=request.final_k
+    )
+TypeError: HospitalRAGPipeline.search_from_ft_xml() got an unexpected keyword argument 'xml_content'
+
+2025-08-23 12:44:15,191 - main - INFO - [req_1755920655191] FT XML 검색 요청: rerank_mode=llm
+2025-08-23 12:44:15,191 - main - INFO - [req_1755920655191] XML 파싱 시작...
+2025-08-23 12:44:15,192 - main - INFO - [req_1755920655191] 파이프라인 실행 시작...
+2025-08-23 12:44:15,192 - main - ERROR - [req_1755920655191] 검색 오류: HospitalRAGPipeline.search_from_ft_xml() got an unexpected keyword argument 'xml_content'
+2025-08-23 12:44:15,192 - main - ERROR - Traceback (most recent call last):
+  File "/Users/doriankim/Documents/병원리스트 임베딩/피부과 데이터 jsonl 정리/hospital-search-backend/main.py", line 217, in search_ft_xml
+    results_data = pipeline.search_from_ft_xml(
+        xml_content=request.xml,
+    ...<2 lines>...
+        final_top_k=request.final_k
+    )
+TypeError: HospitalRAGPipeline.search_from_ft_xml() got an unexpected keyword argument 'xml_content'
+
+2025-08-23 12:44:19,375 - main - INFO - [req_1755920659375] FT XML 검색 요청: rerank_mode=ce
+2025-08-23 12:44:19,375 - main - INFO - [req_1755920659375] XML 파싱 시작...
+2025-08-23 12:44:19,375 - main - INFO - [req_1755920659375] 파이프라인 실행 시작...
+2025-08-23 12:44:19,375 - main - ERROR - [req_1755920659375] 검색 오류: HospitalRAGPipeline.search_from_ft_xml() got an unexpected keyword argument 'xml_content'
+2025-08-23 12:44:19,376 - main - ERROR - Traceback (most recent call last):
+  File "/Users/doriankim/Documents/병원리스트 임베딩/피부과 데이터 jsonl 정리/hospital-search-backend/main.py", line 217, in search_ft_xml
+    results_data = pipeline.search_from_ft_xml(
+        xml_content=request.xml,
+    ...<2 lines>...
+        final_top_k=request.final_k
+    )
+TypeError: HospitalRAGPipeline.search_from_ft_xml() got an unexpected keyword argument 'xml_content'
+
+2025-08-23 12:44:22,392 - main - INFO - [req_1755920662392] FT XML 검색 요청: rerank_mode=ce
+2025-08-23 12:44:22,393 - main - INFO - [req_1755920662392] XML 파싱 시작...
+2025-08-23 12:44:22,393 - main - INFO - [req_1755920662392] 파이프라인 실행 시작...
+2025-08-23 12:44:22,393 - main - ERROR - [req_1755920662392] 검색 오류: HospitalRAGPipeline.search_from_ft_xml() got an unexpected keyword argument 'xml_content'
+2025-08-23 12:44:22,394 - main - ERROR - Traceback (most recent call last):
+  File "/Users/doriankim/Documents/병원리스트 임베딩/피부과 데이터 jsonl 정리/hospital-search-backend/main.py", line 217, in search_ft_xml
+    results_data = pipeline.search_from_ft_xml(
+        xml_content=request.xml,
+    ...<2 lines>...
+        final_top_k=request.final_k
+    )
+TypeError: HospitalRAGPipeline.search_from_ft_xml() got an unexpected keyword argument 'xml_content'
+
+2025-08-23 12:44:22,975 - main - INFO - [req_1755920662975] FT XML 검색 요청: rerank_mode=ce
+2025-08-23 12:44:22,975 - main - INFO - [req_1755920662975] XML 파싱 시작...
+2025-08-23 12:44:22,975 - main - INFO - [req_1755920662975] 파이프라인 실행 시작...
+2025-08-23 12:44:22,975 - main - ERROR - [req_1755920662975] 검색 오류: HospitalRAGPipeline.search_from_ft_xml() got an unexpected keyword argument 'xml_content'
+2025-08-23 12:44:22,976 - main - ERROR - Traceback (most recent call last):
+  File "/Users/doriankim/Documents/병원리스트 임베딩/피부과 데이터 jsonl 정리/hospital-search-backend/main.py", line 217, in search_ft_xml
+    results_data = pipeline.search_from_ft_xml(
+        xml_content=request.xml,
+    ...<2 lines>...
+        final_top_k=request.final_k
+    )
+TypeError: HospitalRAGPipeline.search_from_ft_xml() got an unexpected keyword argument 'xml_content'
+
+2025-08-23 12:45:01,036 - __main__ - INFO - 🌐 병원 검색 백엔드 시작: http://0.0.0.0:8002
+2025-08-23 12:45:01,046 - main - INFO - 🚀 병원 검색 백엔드 초기화 시작...
+2025-08-23 12:45:01,046 - main - INFO - 📦 RAG 파이프라인 생성 중...
+2025-08-23 12:45:01,504 - httpx - INFO - HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-08-23 12:45:02,926 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: mps
+2025-08-23 12:45:04,149 - main - INFO - ✅ 백엔드 초기화 완료!
+2025-08-23 12:45:04,149 - main - INFO - 🛑 백엔드 종료 중...
+2025-08-23 12:45:22,661 - main - INFO - 🛑 백엔드 종료 중...
+2025-08-23 12:45:29,887 - __main__ - INFO - 🌐 병원 검색 백엔드 시작: http://0.0.0.0:8002
+2025-08-23 12:45:29,894 - main - INFO - 🚀 병원 검색 백엔드 초기화 시작...
+2025-08-23 12:45:29,894 - main - INFO - 📦 RAG 파이프라인 생성 중...
+2025-08-23 12:45:30,372 - httpx - INFO - HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-08-23 12:45:31,795 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: mps
+2025-08-23 12:45:32,257 - main - INFO - ✅ 백엔드 초기화 완료!
+2025-08-23 12:45:51,765 - main - INFO - [req_1755920751765] FT XML 검색 요청: rerank_mode=ce
+2025-08-23 12:45:51,765 - main - INFO - [req_1755920751765] XML 파싱 시작...
+2025-08-23 12:45:51,765 - main - INFO - [req_1755920751765] 파이프라인 실행 시작...
+2025-08-23 12:45:51,765 - main - ERROR - [req_1755920751765] 검색 오류: HospitalRAGPipeline.search_from_ft_xml() got an unexpected keyword argument 'xml_content'
+2025-08-23 12:45:51,766 - main - ERROR - Traceback (most recent call last):
+  File "/Users/doriankim/Documents/병원리스트 임베딩/피부과 데이터 jsonl 정리/hospital-search-backend/main.py", line 217, in search_ft_xml
+    results_data = pipeline.search_from_ft_xml(
+        xml_content=request.xml,
+    ...<2 lines>...
+        final_top_k=request.final_k
+    )
+TypeError: HospitalRAGPipeline.search_from_ft_xml() got an unexpected keyword argument 'xml_content'
+
+2025-08-23 12:46:37,937 - __main__ - INFO - 🌐 병원 검색 백엔드 시작: http://0.0.0.0:8002
+2025-08-23 12:46:37,945 - main - INFO - 🚀 병원 검색 백엔드 초기화 시작...
+2025-08-23 12:46:37,945 - main - INFO - 📦 RAG 파이프라인 생성 중...
+2025-08-23 12:46:38,423 - httpx - INFO - HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-08-23 12:46:39,838 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: mps
+2025-08-23 12:46:40,287 - main - INFO - ✅ 백엔드 초기화 완료!
+2025-08-23 12:46:52,412 - main - INFO - [req_1755920812411] FT XML 검색 요청: rerank_mode=ce
+2025-08-23 12:46:52,412 - main - INFO - [req_1755920812411] XML 파싱 시작...
+2025-08-23 12:46:52,412 - main - INFO - [req_1755920812411] 파이프라인 실행 시작...
+2025-08-23 12:46:53,532 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-23 12:46:54,130 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/query "HTTP/1.1 200 OK"
+2025-08-23 12:46:54,286 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/scroll "HTTP/1.1 200 OK"
+2025-08-23 12:46:55,413 - main - INFO - [req_1755920812411] 검색 완료: 2개 결과, 3.00s
+2025-08-23 12:47:22,940 - main - INFO - [req_1755920842940] FT XML 검색 요청: rerank_mode=ce
+2025-08-23 12:47:22,940 - main - INFO - [req_1755920842940] XML 파싱 시작...
+2025-08-23 12:47:22,940 - main - INFO - [req_1755920842940] 파이프라인 실행 시작...
+2025-08-23 12:47:23,561 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-23 12:47:24,192 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/query "HTTP/1.1 200 OK"
+2025-08-23 12:47:25,136 - main - INFO - [req_1755920842940] 검색 완료: 2개 결과, 2.20s
+2025-08-23 12:47:33,089 - main - INFO - [req_1755920853089] FT XML 검색 요청: rerank_mode=llm
+2025-08-23 12:47:33,089 - main - INFO - [req_1755920853089] XML 파싱 시작...
+2025-08-23 12:47:33,089 - main - INFO - [req_1755920853089] 파이프라인 실행 시작...
+2025-08-23 12:47:33,516 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-23 12:47:34,073 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/query "HTTP/1.1 200 OK"
+2025-08-23 12:47:34,879 - main - INFO - [req_1755920853089] 검색 완료: 2개 결과, 1.79s
+2025-08-23 12:50:55,731 - __main__ - INFO - 🌐 병원 검색 백엔드 시작: http://0.0.0.0:8002
+2025-08-23 12:50:55,740 - main - INFO - 🚀 병원 검색 백엔드 초기화 시작...
+2025-08-23 12:50:55,740 - main - INFO - 📦 RAG 파이프라인 생성 중...
+2025-08-23 12:50:56,215 - httpx - INFO - HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-08-23 12:50:57,970 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: mps
+2025-08-23 12:50:58,438 - main - INFO - ✅ 백엔드 초기화 완료!
+2025-08-23 12:51:11,937 - main - INFO - [req_1755921071937] FT XML 검색 요청: rerank_mode=ce
+2025-08-23 12:51:11,937 - main - INFO - [req_1755921071937] XML 파싱 시작...
+2025-08-23 12:51:11,937 - main - INFO - [req_1755921071937] 파이프라인 실행 시작...
+2025-08-23 12:51:12,614 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-23 12:51:13,215 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/query "HTTP/1.1 200 OK"
+2025-08-23 12:51:13,368 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/scroll "HTTP/1.1 200 OK"
+2025-08-23 12:51:14,425 - main - INFO - [req_1755921071937] 검색 완료: 2개 결과, 2.49s
+2025-08-23 12:51:50,019 - main - INFO - [req_1755921110019] FT XML 검색 요청: rerank_mode=ce
+2025-08-23 12:51:50,019 - main - INFO - [req_1755921110019] XML 파싱 시작...
+2025-08-23 12:51:50,020 - main - INFO - [req_1755921110019] 파이프라인 실행 시작...
+2025-08-23 12:51:51,572 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-23 12:51:52,147 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/query "HTTP/1.1 200 OK"
+2025-08-23 12:51:53,096 - main - INFO - [req_1755921110019] 검색 완료: 2개 결과, 3.08s
+2025-08-23 12:53:17,901 - main - INFO - [req_1755921197901] FT XML 검색 요청: rerank_mode=ce
+2025-08-23 12:53:17,902 - main - INFO - [req_1755921197901] XML 파싱 시작...
+2025-08-23 12:53:17,902 - main - INFO - [req_1755921197901] 파이프라인 실행 시작...
+2025-08-23 12:53:18,284 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-23 12:53:18,850 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/query "HTTP/1.1 200 OK"
+2025-08-23 12:53:19,634 - main - INFO - [req_1755921197901] 검색 완료: 2개 결과, 1.73s
+2025-08-23 12:53:59,116 - main - INFO - [req_1755921239116] FT XML 검색 요청: rerank_mode=llm
+2025-08-23 12:53:59,116 - main - INFO - [req_1755921239116] XML 파싱 시작...
+2025-08-23 12:53:59,117 - main - INFO - [req_1755921239116] 파이프라인 실행 시작...
+2025-08-23 12:54:00,188 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-23 12:54:01,007 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/query "HTTP/1.1 200 OK"
+2025-08-23 12:54:01,840 - main - INFO - [req_1755921239116] 검색 완료: 2개 결과, 2.72s
+2025-08-23 12:54:17,283 - main - INFO - [req_1755921257283] FT XML 검색 요청: rerank_mode=ce
+2025-08-23 12:54:17,283 - main - INFO - [req_1755921257283] XML 파싱 시작...
+2025-08-23 12:54:17,283 - main - INFO - [req_1755921257283] 파이프라인 실행 시작...
+2025-08-23 12:54:17,645 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-23 12:54:18,221 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/query "HTTP/1.1 200 OK"
+2025-08-23 12:54:19,063 - main - INFO - [req_1755921257283] 검색 완료: 2개 결과, 1.78s
+2025-08-23 12:54:23,664 - main - INFO - [req_1755921263664] FT XML 검색 요청: rerank_mode=llm
+2025-08-23 12:54:23,664 - main - INFO - [req_1755921263664] XML 파싱 시작...
+2025-08-23 12:54:23,665 - main - INFO - [req_1755921263664] 파이프라인 실행 시작...
+2025-08-23 12:54:24,036 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-23 12:54:24,632 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/query "HTTP/1.1 200 OK"
+2025-08-23 12:54:25,459 - main - INFO - [req_1755921263664] 검색 완료: 2개 결과, 1.79s
+2025-08-23 14:09:39,040 - __main__ - INFO - 🌐 병원 검색 백엔드 시작: http://0.0.0.0:8002
+2025-08-23 14:09:39,051 - main - INFO - 🚀 병원 검색 백엔드 초기화 시작...
+2025-08-23 14:09:39,051 - main - INFO - 📦 RAG 파이프라인 생성 중...
+2025-08-23 14:09:39,524 - httpx - INFO - HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-08-23 14:09:40,972 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: mps
+2025-08-23 14:09:43,382 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: mps
+2025-08-23 14:09:43,928 - main - INFO - ✅ 백엔드 초기화 완료!
+2025-08-23 14:09:58,341 - main - INFO - [req_1755925798341] FT XML 검색 요청: rerank_mode=ce
+2025-08-23 14:09:58,341 - main - INFO - [req_1755925798341] XML 파싱 시작...
+2025-08-23 14:09:58,341 - main - INFO - [req_1755925798341] 파이프라인 실행 시작...
+2025-08-23 14:09:59,272 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-23 14:09:59,846 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/query "HTTP/1.1 200 OK"
+2025-08-23 14:09:59,997 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/scroll "HTTP/1.1 200 OK"
+2025-08-23 14:10:01,613 - main - INFO - [req_1755925798341] 검색 완료: 2개 결과, 3.27s
+2025-08-23 14:10:21,004 - main - INFO - [req_1755925821004] FT XML 검색 요청: rerank_mode=llm
+2025-08-23 14:10:21,004 - main - INFO - [req_1755925821004] XML 파싱 시작...
+2025-08-23 14:10:21,004 - main - INFO - [req_1755925821004] 파이프라인 실행 시작...
+2025-08-23 14:10:21,730 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-23 14:10:22,330 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/query "HTTP/1.1 200 OK"
+2025-08-23 14:10:23,220 - main - INFO - [req_1755925821004] 검색 완료: 2개 결과, 2.22s
+2025-08-23 14:11:28,870 - main - INFO - [req_1755925888870] FT XML 검색 요청: rerank_mode=off
+2025-08-23 14:11:28,870 - main - INFO - [req_1755925888870] XML 파싱 시작...
+2025-08-23 14:11:28,870 - main - INFO - [req_1755925888870] 파이프라인 실행 시작...
+2025-08-23 14:11:29,453 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-23 14:11:30,067 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/query "HTTP/1.1 200 OK"
+2025-08-23 14:11:31,012 - main - INFO - [req_1755925888870] 검색 완료: 2개 결과, 2.14s
+2025-08-23 14:13:05,973 - main - INFO - [req_1755925985973] FT XML 검색 요청: rerank_mode=off
+2025-08-23 14:13:05,973 - main - INFO - [req_1755925985973] XML 파싱 시작...
+2025-08-23 14:13:05,973 - main - INFO - [req_1755925985973] 파이프라인 실행 시작...
+2025-08-23 14:13:06,915 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-23 14:13:07,504 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/query "HTTP/1.1 200 OK"
+2025-08-23 14:13:08,470 - main - INFO - [req_1755925985973] 검색 완료: 2개 결과, 2.50s
+2025-08-23 14:13:16,473 - main - INFO - [req_1755925996473] FT XML 검색 요청: rerank_mode=ce
+2025-08-23 14:13:16,473 - main - INFO - [req_1755925996473] XML 파싱 시작...
+2025-08-23 14:13:16,473 - main - INFO - [req_1755925996473] 파이프라인 실행 시작...
+2025-08-23 14:13:17,217 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-23 14:13:17,796 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/query "HTTP/1.1 200 OK"
+2025-08-23 14:13:19,266 - main - INFO - [req_1755925996473] 검색 완료: 2개 결과, 2.79s
+2025-08-23 14:14:42,986 - main - INFO - [req_1755926082986] FT XML 검색 요청: rerank_mode=ce
+2025-08-23 14:14:42,987 - main - INFO - [req_1755926082986] XML 파싱 시작...
+2025-08-23 14:14:42,987 - main - INFO - [req_1755926082986] 파이프라인 실행 시작...
+2025-08-23 14:14:43,579 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-23 14:14:44,193 - httpx - INFO - HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/query "HTTP/1.1 200 OK"
+2025-08-23 14:14:45,572 - main - INFO - [req_1755926082986] 검색 완료: 2개 결과, 2.59s

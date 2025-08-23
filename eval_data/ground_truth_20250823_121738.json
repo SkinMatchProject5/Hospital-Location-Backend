@@ -1,0 +1,901 @@
+{
+  "광선각화증": [
+    {
+      "hospital_name": "아주대학교병원 피부과",
+      "parent_id": "parent_ajou_derm",
+      "region": "경기 수원",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "강남세브란스병원 피부과",
+      "parent_id": "parent_gs_sev_derm",
+      "region": "서울 강남",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "가톨릭대학교 은평성모병원 피부암센터",
+      "parent_id": "parent_cmcep_skin_cancer",
+      "region": "서울 은평",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "피부병리": [
+    {
+      "hospital_name": "아주대학교병원 피부과",
+      "parent_id": "parent_ajou_derm",
+      "region": "경기 수원",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "조직검사": [
+    {
+      "hospital_name": "아주대학교병원 피부과",
+      "parent_id": "parent_ajou_derm",
+      "region": "경기 수원",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "한양대학교병원 피부과",
+      "parent_id": "parent_hyumc_derm",
+      "region": "서울 성동",
+      "rank": 3,
+      "is_primary": false
+    }
+  ],
+  "광선치료": [
+    {
+      "hospital_name": "아주대학교병원 피부과",
+      "parent_id": "parent_ajou_derm",
+      "region": "경기 수원",
+      "rank": 4,
+      "is_primary": false
+    }
+  ],
+  "냉동치료": [
+    {
+      "hospital_name": "강남세브란스병원 피부과",
+      "parent_id": "parent_gs_sev_derm",
+      "region": "서울 강남",
+      "rank": 2,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "오라클피부과(분당)",
+      "parent_id": "parent_oracle_bundang",
+      "region": "경기 성남",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "예손병원",
+      "parent_id": "parent_yeson",
+      "region": "경기 광명",
+      "rank": 4,
+      "is_primary": false
+    }
+  ],
+  "광역학치료": [
+    {
+      "hospital_name": "강남세브란스병원 피부과",
+      "parent_id": "parent_gs_sev_derm",
+      "region": "서울 강남",
+      "rank": 3,
+      "is_primary": false
+    }
+  ],
+  "기저세포암": [
+    {
+      "hospital_name": "서울아산병원 피부암센터",
+      "parent_id": "parent_asan_skin_cancer",
+      "region": "서울 송파",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "서울대학교병원 피부과(암병원)",
+      "parent_id": "parent_snuh_cancer_derm",
+      "region": "서울 종로",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "서울대학교병원 보라매병원 피부암센터",
+      "parent_id": "parent_brmh_cancer_derm",
+      "region": "서울 동작",
+      "rank": 2,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "한양대학교병원 피부과",
+      "parent_id": "parent_hyumc_derm",
+      "region": "서울 성동",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "다학제진료": [
+    {
+      "hospital_name": "서울아산병원 피부암센터",
+      "parent_id": "parent_asan_skin_cancer",
+      "region": "서울 송파",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "악성피부암": [
+    {
+      "hospital_name": "서울대학교병원 피부과(암병원)",
+      "parent_id": "parent_snuh_cancer_derm",
+      "region": "서울 종로",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "다학제": [
+    {
+      "hospital_name": "세브란스병원 흑색종클리닉",
+      "parent_id": "parent_sev_melanoma",
+      "region": "서울 서대문",
+      "rank": 2,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "서울대학교병원 피부과(암병원)",
+      "parent_id": "parent_snuh_cancer_derm",
+      "region": "서울 종로",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "가톨릭대학교 은평성모병원 피부암센터",
+      "parent_id": "parent_cmcep_skin_cancer",
+      "region": "서울 은평",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "고려대학교 안암병원 흑색종클리닉",
+      "parent_id": "parent_korea_anam_melanoma",
+      "region": "서울 성북",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "세브란스병원 혈관종클리닉",
+      "parent_id": "parent_sev_vascular",
+      "region": "서울 서대문",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "서울대학교병원 보라매병원 피부암센터",
+      "parent_id": "parent_brmh_cancer_derm",
+      "region": "서울 동작",
+      "rank": 4,
+      "is_primary": false
+    }
+  ],
+  "선천성 멜라닌세포모반": [
+    {
+      "hospital_name": "서울대학교어린이병원 선천성 모반 클리닉",
+      "parent_id": "parent_snuh_child_nevus",
+      "region": "서울 종로",
+      "rank": 1,
+      "is_primary": true
+    }
+  ],
+  "이토·오타모반": [
+    {
+      "hospital_name": "서울대학교어린이병원 선천성 모반 클리닉",
+      "parent_id": "parent_snuh_child_nevus",
+      "region": "서울 종로",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "수술·레이저": [
+    {
+      "hospital_name": "서울대학교어린이병원 선천성 모반 클리닉",
+      "parent_id": "parent_snuh_child_nevus",
+      "region": "서울 종로",
+      "rank": 3,
+      "is_primary": false
+    }
+  ],
+  "멜라닌세포모반": [
+    {
+      "hospital_name": "분당서울대학교병원 피부과",
+      "parent_id": "parent_snubh_derm",
+      "region": "경기 성남",
+      "rank": 1,
+      "is_primary": true
+    }
+  ],
+  "색소질환": [
+    {
+      "hospital_name": "분당서울대학교병원 피부과",
+      "parent_id": "parent_snubh_derm",
+      "region": "경기 성남",
+      "rank": 2,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "리멤버피부과의원(약수)",
+      "parent_id": "parent_remember_derm",
+      "region": "서울 중구",
+      "rank": 3,
+      "is_primary": false
+    }
+  ],
+  "레이저": [
+    {
+      "hospital_name": "분당서울대학교병원 피부과",
+      "parent_id": "parent_snubh_derm",
+      "region": "경기 성남",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "가톨릭대학교 성빈센트병원 혈관종클리닉",
+      "parent_id": "parent_cmc_vincent_vascular",
+      "region": "경기 수원",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "예손병원",
+      "parent_id": "parent_yeson",
+      "region": "경기 광명",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "오라클피부과(분당)",
+      "parent_id": "parent_oracle_bundang",
+      "region": "경기 성남",
+      "rank": 4,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "피부사랑피부과의원",
+      "parent_id": "parent_skinlover",
+      "region": "서울 강남",
+      "rank": 7,
+      "is_primary": false
+    }
+  ],
+  "보웬병": [
+    {
+      "hospital_name": "국립암센터 피부종양클리닉",
+      "parent_id": "parent_ncc_skin",
+      "region": "경기 고양",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "가톨릭대학교 은평성모병원 피부암센터",
+      "parent_id": "parent_cmcep_skin_cancer",
+      "region": "서울 은평",
+      "rank": 1,
+      "is_primary": true
+    }
+  ],
+  "전암성 병변": [
+    {
+      "hospital_name": "국립암센터 피부종양클리닉",
+      "parent_id": "parent_ncc_skin",
+      "region": "경기 고양",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "맞춤치료": [
+    {
+      "hospital_name": "국립암센터 피부종양클리닉",
+      "parent_id": "parent_ncc_skin",
+      "region": "경기 고양",
+      "rank": 3,
+      "is_primary": false
+    }
+  ],
+  "비립종": [
+    {
+      "hospital_name": "플렉스피부과의원",
+      "parent_id": "parent_flex_derm",
+      "region": "서울 강남",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "차앤유클리닉(마곡점)",
+      "parent_id": "parent_cnuclinic_maggok",
+      "region": "서울 강서",
+      "rank": 2,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "더서울피부과의원",
+      "parent_id": "parent_the_seoul_derm",
+      "region": "서울 강남",
+      "rank": 2,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "피부사랑피부과의원",
+      "parent_id": "parent_skinlover",
+      "region": "서울 강남",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "사려니의원",
+      "parent_id": "parent_saryeoni",
+      "region": "서울 영등포",
+      "rank": 6,
+      "is_primary": false
+    }
+  ],
+  "한관종": [
+    {
+      "hospital_name": "차앤유클리닉(마곡점)",
+      "parent_id": "parent_cnuclinic_maggok",
+      "region": "서울 강서",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "플렉스피부과의원",
+      "parent_id": "parent_flex_derm",
+      "region": "서울 강남",
+      "rank": 2,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "피부사랑피부과의원",
+      "parent_id": "parent_skinlover",
+      "region": "서울 강남",
+      "rank": 2,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "차앤유클리닉(피지샘증식증)",
+      "parent_id": "parent_cnuclinic_sg",
+      "region": "서울 강서",
+      "rank": 2,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "미모드림의원",
+      "parent_id": "parent_mimodream",
+      "region": "서울 강남",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "CO2레이저": [
+    {
+      "hospital_name": "플렉스피부과의원",
+      "parent_id": "parent_flex_derm",
+      "region": "서울 강남",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "더서울피부과의원",
+      "parent_id": "parent_the_seoul_derm",
+      "region": "서울 강남",
+      "rank": 4,
+      "is_primary": false
+    }
+  ],
+  "고주파": [
+    {
+      "hospital_name": "차앤유클리닉(마곡점)",
+      "parent_id": "parent_cnuclinic_maggok",
+      "region": "서울 강서",
+      "rank": 3,
+      "is_primary": false
+    }
+  ],
+  "CO2": [
+    {
+      "hospital_name": "차앤유클리닉(피지샘증식증)",
+      "parent_id": "parent_cnuclinic_sg",
+      "region": "서울 강서",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "미모드림의원",
+      "parent_id": "parent_mimodream",
+      "region": "서울 강남",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "차앤유클리닉(마곡점)",
+      "parent_id": "parent_cnuclinic_maggok",
+      "region": "서울 강서",
+      "rank": 4,
+      "is_primary": false
+    }
+  ],
+  "편평사마귀": [
+    {
+      "hospital_name": "사려니의원",
+      "parent_id": "parent_saryeoni",
+      "region": "서울 영등포",
+      "rank": 1,
+      "is_primary": true
+    }
+  ],
+  "체리혈관종": [
+    {
+      "hospital_name": "사려니의원",
+      "parent_id": "parent_saryeoni",
+      "region": "서울 영등포",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "검버섯": [
+    {
+      "hospital_name": "사려니의원",
+      "parent_id": "parent_saryeoni",
+      "region": "서울 영등포",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "피부사랑피부과의원",
+      "parent_id": "parent_skinlover",
+      "region": "서울 강남",
+      "rank": 6,
+      "is_primary": false
+    }
+  ],
+  "쥐젖": [
+    {
+      "hospital_name": "사려니의원",
+      "parent_id": "parent_saryeoni",
+      "region": "서울 영등포",
+      "rank": 4,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "피부사랑피부과의원",
+      "parent_id": "parent_skinlover",
+      "region": "서울 강남",
+      "rank": 4,
+      "is_primary": false
+    }
+  ],
+  "점": [
+    {
+      "hospital_name": "애플피부과의원",
+      "parent_id": "parent_apple_derm",
+      "region": "서울 관악",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "사려니의원",
+      "parent_id": "parent_saryeoni",
+      "region": "서울 영등포",
+      "rank": 5,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "피부사랑피부과의원",
+      "parent_id": "parent_skinlover",
+      "region": "서울 강남",
+      "rank": 5,
+      "is_primary": false
+    }
+  ],
+  "사마귀": [
+    {
+      "hospital_name": "오라클피부과(분당)",
+      "parent_id": "parent_oracle_bundang",
+      "region": "경기 성남",
+      "rank": 1,
+      "is_primary": true
+    }
+  ],
+  "티눈": [
+    {
+      "hospital_name": "오라클피부과(분당)",
+      "parent_id": "parent_oracle_bundang",
+      "region": "경기 성남",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "악성흑색종": [
+    {
+      "hospital_name": "세브란스병원 흑색종클리닉",
+      "parent_id": "parent_sev_melanoma",
+      "region": "서울 서대문",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "고려대학교 안암병원 흑색종클리닉",
+      "parent_id": "parent_korea_anam_melanoma",
+      "region": "서울 성북",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "서울대학교병원 보라매병원 피부암센터",
+      "parent_id": "parent_brmh_cancer_derm",
+      "region": "서울 동작",
+      "rank": 3,
+      "is_primary": false
+    }
+  ],
+  "면역항암": [
+    {
+      "hospital_name": "세브란스병원 흑색종클리닉",
+      "parent_id": "parent_sev_melanoma",
+      "region": "서울 서대문",
+      "rank": 3,
+      "is_primary": false
+    }
+  ],
+  "희귀피부암": [
+    {
+      "hospital_name": "고려대학교 안암병원 흑색종클리닉",
+      "parent_id": "parent_korea_anam_melanoma",
+      "region": "서울 성북",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "지루각화증": [
+    {
+      "hospital_name": "피부사랑피부과의원",
+      "parent_id": "parent_skinlover",
+      "region": "서울 강남",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "더서울피부과의원",
+      "parent_id": "parent_the_seoul_derm",
+      "region": "서울 강남",
+      "rank": 1,
+      "is_primary": true
+    }
+  ],
+  "잡티": [
+    {
+      "hospital_name": "애플피부과의원",
+      "parent_id": "parent_apple_derm",
+      "region": "서울 관악",
+      "rank": 2,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "더서울피부과의원",
+      "parent_id": "parent_the_seoul_derm",
+      "region": "서울 강남",
+      "rank": 3,
+      "is_primary": false
+    }
+  ],
+  "편평세포암": [
+    {
+      "hospital_name": "서울대학교병원 보라매병원 피부암센터",
+      "parent_id": "parent_brmh_cancer_derm",
+      "region": "서울 동작",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "한양대학교병원 피부과",
+      "parent_id": "parent_hyumc_derm",
+      "region": "서울 성동",
+      "rank": 1,
+      "is_primary": true
+    }
+  ],
+  "수술": [
+    {
+      "hospital_name": "한양대학교병원 피부과",
+      "parent_id": "parent_hyumc_derm",
+      "region": "서울 성동",
+      "rank": 4,
+      "is_primary": false
+    }
+  ],
+  "항암": [
+    {
+      "hospital_name": "한양대학교병원 피부과",
+      "parent_id": "parent_hyumc_derm",
+      "region": "서울 성동",
+      "rank": 5,
+      "is_primary": false
+    }
+  ],
+  "표피낭종": [
+    {
+      "hospital_name": "오체안성형외과",
+      "parent_id": "parent_ozhean_ps",
+      "region": "서울 서초",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "아문성형외과",
+      "parent_id": "parent_amun_ps",
+      "region": "서울 중구",
+      "rank": 1,
+      "is_primary": true
+    }
+  ],
+  "피지낭종": [
+    {
+      "hospital_name": "오체안성형외과",
+      "parent_id": "parent_ozhean_ps",
+      "region": "서울 서초",
+      "rank": 2,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "아문성형외과",
+      "parent_id": "parent_amun_ps",
+      "region": "서울 중구",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "지방종": [
+    {
+      "hospital_name": "오체안성형외과",
+      "parent_id": "parent_ozhean_ps",
+      "region": "서울 서초",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "아문성형외과",
+      "parent_id": "parent_amun_ps",
+      "region": "서울 중구",
+      "rank": 3,
+      "is_primary": false
+    }
+  ],
+  "양성종양수술": [
+    {
+      "hospital_name": "오체안성형외과",
+      "parent_id": "parent_ozhean_ps",
+      "region": "서울 서초",
+      "rank": 4,
+      "is_primary": false
+    }
+  ],
+  "미세절개": [
+    {
+      "hospital_name": "오체안성형외과(섬유종)",
+      "parent_id": "parent_ozhean_df",
+      "region": "서울 서초",
+      "rank": 3,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "아문성형외과",
+      "parent_id": "parent_amun_ps",
+      "region": "서울 중구",
+      "rank": 4,
+      "is_primary": false
+    }
+  ],
+  "피부섬유종": [
+    {
+      "hospital_name": "오체안성형외과(섬유종)",
+      "parent_id": "parent_ozhean_df",
+      "region": "서울 서초",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "가톨릭대학교 은평성모병원 피부 및 연조직종양클리닉",
+      "parent_id": "parent_cmcep_soft_tissue",
+      "region": "서울 은평",
+      "rank": 1,
+      "is_primary": true
+    }
+  ],
+  "진피섬유종": [
+    {
+      "hospital_name": "오체안성형외과(섬유종)",
+      "parent_id": "parent_ozhean_df",
+      "region": "서울 서초",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "연조직종양": [
+    {
+      "hospital_name": "가톨릭대학교 은평성모병원 피부 및 연조직종양클리닉",
+      "parent_id": "parent_cmcep_soft_tissue",
+      "region": "서울 은평",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "절제·재건": [
+    {
+      "hospital_name": "가톨릭대학교 은평성모병원 피부 및 연조직종양클리닉",
+      "parent_id": "parent_cmcep_soft_tissue",
+      "region": "서울 은평",
+      "rank": 3,
+      "is_primary": false
+    }
+  ],
+  "피지샘증식증": [
+    {
+      "hospital_name": "차앤유클리닉(피지샘증식증)",
+      "parent_id": "parent_cnuclinic_sg",
+      "region": "서울 강서",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "미모드림의원",
+      "parent_id": "parent_mimodream",
+      "region": "서울 강남",
+      "rank": 1,
+      "is_primary": true
+    }
+  ],
+  "RF": [
+    {
+      "hospital_name": "차앤유클리닉(피지샘증식증)",
+      "parent_id": "parent_cnuclinic_sg",
+      "region": "서울 강서",
+      "rank": 4,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "미모드림의원",
+      "parent_id": "parent_mimodream",
+      "region": "서울 강남",
+      "rank": 4,
+      "is_primary": false
+    }
+  ],
+  "재발억제": [
+    {
+      "hospital_name": "차앤유클리닉(피지샘증식증)",
+      "parent_id": "parent_cnuclinic_sg",
+      "region": "서울 강서",
+      "rank": 5,
+      "is_primary": false
+    }
+  ],
+  "혈관종": [
+    {
+      "hospital_name": "세브란스병원 혈관종클리닉",
+      "parent_id": "parent_sev_vascular",
+      "region": "서울 서대문",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "가톨릭대학교 성빈센트병원 혈관종클리닉",
+      "parent_id": "parent_cmc_vincent_vascular",
+      "region": "경기 수원",
+      "rank": 1,
+      "is_primary": true
+    }
+  ],
+  "혈관기형": [
+    {
+      "hospital_name": "세브란스병원 혈관종클리닉",
+      "parent_id": "parent_sev_vascular",
+      "region": "서울 서대문",
+      "rank": 2,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "가톨릭대학교 성빈센트병원 혈관종클리닉",
+      "parent_id": "parent_cmc_vincent_vascular",
+      "region": "경기 수원",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "외과": [
+    {
+      "hospital_name": "가톨릭대학교 성빈센트병원 혈관종클리닉",
+      "parent_id": "parent_cmc_vincent_vascular",
+      "region": "경기 수원",
+      "rank": 4,
+      "is_primary": false
+    }
+  ],
+  "화농육아종": [
+    {
+      "hospital_name": "예손병원",
+      "parent_id": "parent_yeson",
+      "region": "경기 광명",
+      "rank": 1,
+      "is_primary": true
+    },
+    {
+      "hospital_name": "서울대학교병원(외과)",
+      "parent_id": "parent_snuh_surgery",
+      "region": "서울 종로",
+      "rank": 1,
+      "is_primary": true
+    }
+  ],
+  "수부외과": [
+    {
+      "hospital_name": "예손병원",
+      "parent_id": "parent_yeson",
+      "region": "경기 광명",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "피부·연조직": [
+    {
+      "hospital_name": "서울대학교병원(외과)",
+      "parent_id": "parent_snuh_surgery",
+      "region": "서울 종로",
+      "rank": 2,
+      "is_primary": false
+    }
+  ],
+  "외과적 절제": [
+    {
+      "hospital_name": "서울대학교병원(외과)",
+      "parent_id": "parent_snuh_surgery",
+      "region": "서울 종로",
+      "rank": 3,
+      "is_primary": false
+    }
+  ],
+  "모반": [
+    {
+      "hospital_name": "애플피부과의원",
+      "parent_id": "parent_apple_derm",
+      "region": "서울 관악",
+      "rank": 1,
+      "is_primary": true
+    }
+  ],
+  "흑색점": [
+    {
+      "hospital_name": "리멤버피부과의원(약수)",
+      "parent_id": "parent_remember_derm",
+      "region": "서울 중구",
+      "rank": 2,
+      "is_primary": false
+    },
+    {
+      "hospital_name": "애플피부과의원",
+      "parent_id": "parent_apple_derm",
+      "region": "서울 관악",
+      "rank": 4,
+      "is_primary": false
+    }
+  ],
+  "난치성 모반": [
+    {
+      "hospital_name": "리멤버피부과의원(약수)",
+      "parent_id": "parent_remember_derm",
+      "region": "서울 중구",
+      "rank": 1,
+      "is_primary": true
+    }
+  ]
+}

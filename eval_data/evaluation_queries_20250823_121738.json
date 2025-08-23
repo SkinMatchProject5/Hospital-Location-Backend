@@ -1,0 +1,710 @@
+[
+  {
+    "disease": "광선각화증",
+    "query_text": "광선각화증 치료",
+    "expected_top_k": [
+      "아주대학교병원 피부과",
+      "강남세브란스병원 피부과"
+    ],
+    "all_relevant": [
+      "아주대학교병원 피부과",
+      "강남세브란스병원 피부과",
+      "가톨릭대학교 은평성모병원 피부암센터"
+    ],
+    "primary_count": 2,
+    "total_hospitals": 3
+  },
+  {
+    "disease": "피부병리",
+    "query_text": "피부병리 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "아주대학교병원 피부과"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "조직검사",
+    "query_text": "조직검사 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "아주대학교병원 피부과",
+      "한양대학교병원 피부과"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "광선치료",
+    "query_text": "광선치료 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "아주대학교병원 피부과"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "냉동치료",
+    "query_text": "냉동치료 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "강남세브란스병원 피부과",
+      "오라클피부과(분당)",
+      "예손병원"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 3
+  },
+  {
+    "disease": "광역학치료",
+    "query_text": "광역학치료 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "강남세브란스병원 피부과"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "기저세포암",
+    "query_text": "기저세포암 치료",
+    "expected_top_k": [
+      "서울아산병원 피부암센터",
+      "서울대학교병원 피부과(암병원)"
+    ],
+    "all_relevant": [
+      "서울아산병원 피부암센터",
+      "서울대학교병원 피부과(암병원)",
+      "서울대학교병원 보라매병원 피부암센터",
+      "한양대학교병원 피부과"
+    ],
+    "primary_count": 2,
+    "total_hospitals": 4
+  },
+  {
+    "disease": "다학제진료",
+    "query_text": "다학제진료 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "서울아산병원 피부암센터"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "악성피부암",
+    "query_text": "악성피부암 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "서울대학교병원 피부과(암병원)"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "다학제",
+    "query_text": "다학제 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "세브란스병원 흑색종클리닉",
+      "서울대학교병원 피부과(암병원)",
+      "가톨릭대학교 은평성모병원 피부암센터",
+      "고려대학교 안암병원 흑색종클리닉",
+      "세브란스병원 혈관종클리닉"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 6
+  },
+  {
+    "disease": "선천성 멜라닌세포모반",
+    "query_text": "선천성 멜라닌세포모반 치료",
+    "expected_top_k": [
+      "서울대학교어린이병원 선천성 모반 클리닉"
+    ],
+    "all_relevant": [
+      "서울대학교어린이병원 선천성 모반 클리닉"
+    ],
+    "primary_count": 1,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "이토·오타모반",
+    "query_text": "이토·오타모반 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "서울대학교어린이병원 선천성 모반 클리닉"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "수술·레이저",
+    "query_text": "수술·레이저 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "서울대학교어린이병원 선천성 모반 클리닉"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "멜라닌세포모반",
+    "query_text": "멜라닌세포모반 치료",
+    "expected_top_k": [
+      "분당서울대학교병원 피부과"
+    ],
+    "all_relevant": [
+      "분당서울대학교병원 피부과"
+    ],
+    "primary_count": 1,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "색소질환",
+    "query_text": "색소질환 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "분당서울대학교병원 피부과",
+      "리멤버피부과의원(약수)"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "레이저",
+    "query_text": "레이저 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "분당서울대학교병원 피부과",
+      "가톨릭대학교 성빈센트병원 혈관종클리닉",
+      "예손병원",
+      "오라클피부과(분당)",
+      "피부사랑피부과의원"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 5
+  },
+  {
+    "disease": "보웬병",
+    "query_text": "보웬병 치료",
+    "expected_top_k": [
+      "국립암센터 피부종양클리닉",
+      "가톨릭대학교 은평성모병원 피부암센터"
+    ],
+    "all_relevant": [
+      "국립암센터 피부종양클리닉",
+      "가톨릭대학교 은평성모병원 피부암센터"
+    ],
+    "primary_count": 2,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "전암성 병변",
+    "query_text": "전암성 병변 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "국립암센터 피부종양클리닉"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "맞춤치료",
+    "query_text": "맞춤치료 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "국립암센터 피부종양클리닉"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "비립종",
+    "query_text": "비립종 치료",
+    "expected_top_k": [
+      "플렉스피부과의원"
+    ],
+    "all_relevant": [
+      "플렉스피부과의원",
+      "차앤유클리닉(마곡점)",
+      "더서울피부과의원",
+      "피부사랑피부과의원",
+      "사려니의원"
+    ],
+    "primary_count": 1,
+    "total_hospitals": 5
+  },
+  {
+    "disease": "한관종",
+    "query_text": "한관종 치료",
+    "expected_top_k": [
+      "차앤유클리닉(마곡점)"
+    ],
+    "all_relevant": [
+      "차앤유클리닉(마곡점)",
+      "플렉스피부과의원",
+      "피부사랑피부과의원",
+      "차앤유클리닉(피지샘증식증)",
+      "미모드림의원"
+    ],
+    "primary_count": 1,
+    "total_hospitals": 5
+  },
+  {
+    "disease": "CO2레이저",
+    "query_text": "CO2레이저 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "플렉스피부과의원",
+      "더서울피부과의원"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "고주파",
+    "query_text": "고주파 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "차앤유클리닉(마곡점)"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "CO2",
+    "query_text": "CO2 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "차앤유클리닉(피지샘증식증)",
+      "미모드림의원",
+      "차앤유클리닉(마곡점)"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 3
+  },
+  {
+    "disease": "편평사마귀",
+    "query_text": "편평사마귀 치료",
+    "expected_top_k": [
+      "사려니의원"
+    ],
+    "all_relevant": [
+      "사려니의원"
+    ],
+    "primary_count": 1,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "체리혈관종",
+    "query_text": "체리혈관종 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "사려니의원"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "검버섯",
+    "query_text": "검버섯 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "사려니의원",
+      "피부사랑피부과의원"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "쥐젖",
+    "query_text": "쥐젖 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "사려니의원",
+      "피부사랑피부과의원"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "점",
+    "query_text": "점 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "애플피부과의원",
+      "사려니의원",
+      "피부사랑피부과의원"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 3
+  },
+  {
+    "disease": "사마귀",
+    "query_text": "사마귀 치료",
+    "expected_top_k": [
+      "오라클피부과(분당)"
+    ],
+    "all_relevant": [
+      "오라클피부과(분당)"
+    ],
+    "primary_count": 1,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "티눈",
+    "query_text": "티눈 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "오라클피부과(분당)"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "악성흑색종",
+    "query_text": "악성흑색종 치료",
+    "expected_top_k": [
+      "세브란스병원 흑색종클리닉",
+      "고려대학교 안암병원 흑색종클리닉"
+    ],
+    "all_relevant": [
+      "세브란스병원 흑색종클리닉",
+      "고려대학교 안암병원 흑색종클리닉",
+      "서울대학교병원 보라매병원 피부암센터"
+    ],
+    "primary_count": 2,
+    "total_hospitals": 3
+  },
+  {
+    "disease": "면역항암",
+    "query_text": "면역항암 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "세브란스병원 흑색종클리닉"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "희귀피부암",
+    "query_text": "희귀피부암 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "고려대학교 안암병원 흑색종클리닉"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "지루각화증",
+    "query_text": "지루각화증 치료",
+    "expected_top_k": [
+      "피부사랑피부과의원",
+      "더서울피부과의원"
+    ],
+    "all_relevant": [
+      "피부사랑피부과의원",
+      "더서울피부과의원"
+    ],
+    "primary_count": 2,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "잡티",
+    "query_text": "잡티 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "애플피부과의원",
+      "더서울피부과의원"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "편평세포암",
+    "query_text": "편평세포암 치료",
+    "expected_top_k": [
+      "서울대학교병원 보라매병원 피부암센터",
+      "한양대학교병원 피부과"
+    ],
+    "all_relevant": [
+      "서울대학교병원 보라매병원 피부암센터",
+      "한양대학교병원 피부과"
+    ],
+    "primary_count": 2,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "수술",
+    "query_text": "수술 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "한양대학교병원 피부과"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "항암",
+    "query_text": "항암 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "한양대학교병원 피부과"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "표피낭종",
+    "query_text": "표피낭종 치료",
+    "expected_top_k": [
+      "오체안성형외과",
+      "아문성형외과"
+    ],
+    "all_relevant": [
+      "오체안성형외과",
+      "아문성형외과"
+    ],
+    "primary_count": 2,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "피지낭종",
+    "query_text": "피지낭종 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "오체안성형외과",
+      "아문성형외과"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "지방종",
+    "query_text": "지방종 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "오체안성형외과",
+      "아문성형외과"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "양성종양수술",
+    "query_text": "양성종양수술 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "오체안성형외과"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "미세절개",
+    "query_text": "미세절개 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "오체안성형외과(섬유종)",
+      "아문성형외과"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "피부섬유종",
+    "query_text": "피부섬유종 치료",
+    "expected_top_k": [
+      "오체안성형외과(섬유종)",
+      "가톨릭대학교 은평성모병원 피부 및 연조직종양클리닉"
+    ],
+    "all_relevant": [
+      "오체안성형외과(섬유종)",
+      "가톨릭대학교 은평성모병원 피부 및 연조직종양클리닉"
+    ],
+    "primary_count": 2,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "진피섬유종",
+    "query_text": "진피섬유종 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "오체안성형외과(섬유종)"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "연조직종양",
+    "query_text": "연조직종양 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "가톨릭대학교 은평성모병원 피부 및 연조직종양클리닉"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "절제·재건",
+    "query_text": "절제·재건 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "가톨릭대학교 은평성모병원 피부 및 연조직종양클리닉"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "피지샘증식증",
+    "query_text": "피지샘증식증 치료",
+    "expected_top_k": [
+      "차앤유클리닉(피지샘증식증)",
+      "미모드림의원"
+    ],
+    "all_relevant": [
+      "차앤유클리닉(피지샘증식증)",
+      "미모드림의원"
+    ],
+    "primary_count": 2,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "RF",
+    "query_text": "RF 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "차앤유클리닉(피지샘증식증)",
+      "미모드림의원"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "재발억제",
+    "query_text": "재발억제 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "차앤유클리닉(피지샘증식증)"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "혈관종",
+    "query_text": "혈관종 치료",
+    "expected_top_k": [
+      "세브란스병원 혈관종클리닉",
+      "가톨릭대학교 성빈센트병원 혈관종클리닉"
+    ],
+    "all_relevant": [
+      "세브란스병원 혈관종클리닉",
+      "가톨릭대학교 성빈센트병원 혈관종클리닉"
+    ],
+    "primary_count": 2,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "혈관기형",
+    "query_text": "혈관기형 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "세브란스병원 혈관종클리닉",
+      "가톨릭대학교 성빈센트병원 혈관종클리닉"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "외과",
+    "query_text": "외과 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "가톨릭대학교 성빈센트병원 혈관종클리닉"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "화농육아종",
+    "query_text": "화농육아종 치료",
+    "expected_top_k": [
+      "예손병원",
+      "서울대학교병원(외과)"
+    ],
+    "all_relevant": [
+      "예손병원",
+      "서울대학교병원(외과)"
+    ],
+    "primary_count": 2,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "수부외과",
+    "query_text": "수부외과 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "예손병원"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "피부·연조직",
+    "query_text": "피부·연조직 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "서울대학교병원(외과)"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "외과적 절제",
+    "query_text": "외과적 절제 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "서울대학교병원(외과)"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "모반",
+    "query_text": "모반 치료",
+    "expected_top_k": [
+      "애플피부과의원"
+    ],
+    "all_relevant": [
+      "애플피부과의원"
+    ],
+    "primary_count": 1,
+    "total_hospitals": 1
+  },
+  {
+    "disease": "흑색점",
+    "query_text": "흑색점 치료",
+    "expected_top_k": [],
+    "all_relevant": [
+      "리멤버피부과의원(약수)",
+      "애플피부과의원"
+    ],
+    "primary_count": 0,
+    "total_hospitals": 2
+  },
+  {
+    "disease": "난치성 모반",
+    "query_text": "난치성 모반 치료",
+    "expected_top_k": [
+      "리멤버피부과의원(약수)"
+    ],
+    "all_relevant": [
+      "리멤버피부과의원(약수)"
+    ],
+    "primary_count": 1,
+    "total_hospitals": 1
+  }
+]

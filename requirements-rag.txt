@@ -1,0 +1,4 @@
+langchain
+langchain-openai
+rank-bm25
+sentence-transformers
