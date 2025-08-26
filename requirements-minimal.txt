@@ -1,0 +1,41 @@
+# =================================================================
+# Hospital-Location-Backend 최소 필수 패키지
+# 기본 동작에 필요한 패키지만 포함
+# =================================================================
+
+# FastAPI 웹 프레임워크
+fastapi
+uvicorn[standard]
+
+# HTTP 클라이언트
+httpx
+aiohttp
+
+# OpenAI API
+openai
+
+# 자연어 처리 및 검색
+rank-bm25
+scikit-learn
+
+# 데이터 처리
+numpy
+
+# 설정 관리
+python-dotenv
+pydantic
+pydantic-settings
+
+# 로깅
+loguru
+
+# XML 파싱
+beautifulsoup4
+lxml
+
+# 유틸리티
+python-multipart
+typing-extensions
+
+# 벡터 데이터베이스 (선택사항 - 실제 검색에 필요)
+# qdrant-client
