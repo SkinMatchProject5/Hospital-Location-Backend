@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>병원 검색 백엔드 테스트</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .search-section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .search-form {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        
+        input[type="text"] {
+            flex: 1;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        select {
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            background: white;
+        }
+        
+        button {
+            padding: 12px 25px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+            color: #666;
+        }
+        
+        .status {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .results {
+            display: none;
+        }
+        
+        .hospital-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .hospital-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .hospital-name {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .hospital-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #495057;
+            min-width: 60px;
+        }
+        
+        .treatment-title {
+            background: #e3f2fd;
+            color: #1565c0;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        
+        .scores {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .score-item {
+            text-align: center;
+            padding: 8px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .score-label {
+            font-size: 0.8em;
+            color: #666;
+            margin-bottom: 3px;
+        }
+        
+        .score-value {
+            font-weight: 700;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        
+        .meta-info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+        
+        .preset-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+        
+        .preset-btn {
+            padding: 8px 15px;
+            background: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        .preset-btn:hover {
+            background: #5a6268;
+            transform: none;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏥 병원 검색 백엔드 테스트</h1>
+        
+        <div class="search-section">
+            <h2>진단명 검색 테스트</h2>
+            
+            <div class="preset-buttons">
+                <button type="button" class="preset-btn" onclick="setDiagnosis('악성흑색종')">악성흑색종</button>
+                <button type="button" class="preset-btn" onclick="setDiagnosis('기저세포암')">기저세포암</button>
+                <button type="button" class="preset-btn" onclick="setDiagnosis('편평세포암')">편평세포암</button>
+                <button type="button" class="preset-btn" onclick="setDiagnosis('광선각화증')">광선각화증</button>
+                <button type="button" class="preset-btn" onclick="setDiagnosis('멜라닌세포모반')">멜라닌세포모반</button>
+                <button type="button" class="preset-btn" onclick="setDiagnosis('지루각화증')">지루각화증</button>
+            </div>
+            
+            <div class="search-form">
+                <input type="text" id="diagnosis" placeholder="진단명을 입력하세요 (예: 악성흑색종)" />
+                <select id="rerankMode">
+                    <option value="ce">CrossEncoder (추천)</option>
+                    <option value="llm">LLM 리랭킹</option>
+                    <option value="off">리랭킹 없음</option>
+                </select>
+                <button onclick="searchHospitals()" id="searchBtn">검색</button>
+            </div>
+            
+            <div class="loading" id="loading">
+                🔄 병원을 검색하고 있습니다...
+            </div>
+            
+            <div id="status"></div>
+        </div>
+        
+        <div class="results" id="results">
+            <h2>검색 결과</h2>
+            <div id="hospitalList"></div>
+            <div id="metaInfo" class="meta-info"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:8002';
+        
+        function setDiagnosis(diagnosis) {
+            document.getElementById('diagnosis').value = diagnosis;
+        }
+        
+        async function searchHospitals() {
+            const diagnosis = document.getElementById('diagnosis').value.trim();
+            const rerankMode = document.getElementById('rerankMode').value;
+            
+            if (!diagnosis) {
+                showStatus('진단명을 입력해주세요.', 'error');
+                return;
+            }
+            
+            // UI 상태 업데이트
+            document.getElementById('searchBtn').disabled = true;
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+            document.getElementById('status').innerHTML = '';
+            
+            // FT XML 형식으로 요청 구성
+            const xml = `<root>
+                <label>${diagnosis}</label>
+                <summary>${diagnosis} 치료가 필요한 환자</summary>
+                <similar>${diagnosis}</similar>
+            </root>`;
+            
+            const requestData = {
+                xml: xml,
+                rerank_mode: rerankMode,
+                top_k: 24,
+                group_size: 10,
+                final_k: 2
+            };
+            
+            try {
+                console.log('검색 요청:', requestData);
+                
+                const response = await fetch(`${API_BASE_URL}/search-ft-xml`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(requestData)
+                });
+                
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(`API 오류: ${response.status} - ${errorData.detail?.error || response.statusText}`);
+                }
+                
+                const data = await response.json();
+                console.log('검색 응답:', data);
+                
+                displayResults(data, diagnosis, rerankMode);
+                
+            } catch (error) {
+                console.error('검색 오류:', error);
+                showStatus(`검색 오류: ${error.message}`, 'error');
+            } finally {
+                document.getElementById('searchBtn').disabled = false;
+                document.getElementById('loading').style.display = 'none';
+            }
+        }
+        
+        function displayResults(data, diagnosis, rerankMode) {
+            const results = data.results || [];
+            const meta = data.meta || {};
+            
+            // 결과 개수 확인
+            const resultCount = results.length;
+            let statusMessage = '';
+            let statusType = '';
+            
+            if (resultCount === 2) {
+                statusMessage = `✅ 성공: ${diagnosis}에 대해 정확히 2개 병원을 찾았습니다!`;
+                statusType = 'success';
+            } else if (resultCount > 0) {
+                statusMessage = `⚠️ 주의: ${resultCount}개 병원을 찾았습니다 (예상: 2개)`;
+                statusType = 'error';
+            } else {
+                statusMessage = `❌ 오류: 검색 결과가 없습니다`;
+                statusType = 'error';
+            }
+            
+            showStatus(statusMessage, statusType);
+            
+            // 병원 목록 표시
+            const hospitalList = document.getElementById('hospitalList');
+            hospitalList.innerHTML = '';
+            
+            results.forEach((result, index) => {
+                const hospital = result.parent || {};
+                const child = result.child || {};
+                const scores = result.scores || {};
+                
+                const hospitalCard = document.createElement('div');
+                hospitalCard.className = 'hospital-card';
+                hospitalCard.innerHTML = `
+                    <div class="hospital-name">${index + 1}. ${hospital.name || '병원명 없음'}</div>
+                    
+                    <div class="treatment-title">${child.title || '치료정보 없음'}</div>
+                    
+                    <div class="hospital-info">
+                        <div class="info-item">
+                            <span class="info-label">📍 지역:</span>
+                            <span>${hospital.region || '정보없음'}</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">📞 연락처:</span>
+                            <span>${hospital.contacts?.tel || '정보없음'}</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">🏥 주소:</span>
+                            <span>${hospital.contacts?.addr || '정보없음'}</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">💡 전문분야:</span>
+                            <span>${(hospital.specialties || []).join(', ') || '정보없음'}</span>
+                        </div>
+                    </div>
+                    
+                    ${Object.keys(scores).length > 0 ? `
+                    <div class="scores">
+                        ${scores.dense !== undefined ? `
+                        <div class="score-item">
+                            <div class="score-label">Dense Score</div>
+                            <div class="score-value">${(scores.dense * 100).toFixed(1)}%</div>
+                        </div>
+                        ` : ''}
+                        ${scores.sparse !== undefined ? `
+                        <div class="score-item">
+                            <div class="score-label">Sparse Score</div>
+                            <div class="score-value">${(scores.sparse * 100).toFixed(1)}%</div>
+                        </div>
+                        ` : ''}
+                        ${scores.combined !== undefined ? `
+                        <div class="score-item">
+                            <div class="score-label">Combined</div>
+                            <div class="score-value">${(scores.combined * 100).toFixed(1)}%</div>
+                        </div>
+                        ` : ''}
+                        ${scores.rerank !== undefined ? `
+                        <div class="score-item">
+                            <div class="score-label">Rerank Score</div>
+                            <div class="score-value">${(scores.rerank * 100).toFixed(1)}%</div>
+                        </div>
+                        ` : ''}
+                    </div>
+                    ` : ''}
+                `;
+                
+                hospitalList.appendChild(hospitalCard);
+            });
+            
+            // 메타 정보 표시
+            const metaInfo = document.getElementById('metaInfo');
+            metaInfo.innerHTML = `
+                <strong>검색 메타 정보:</strong><br>
+                • 요청 ID: ${meta.request_id || 'N/A'}<br>
+                • 응답 시간: ${meta.elapsed_ms || 0}ms<br>
+                • 리랭킹 모드: ${rerankMode}<br>
+                • 후보 수: ${meta.candidates || 0}개<br>
+                • 그룹화된 병원: ${meta.grouped || 0}개<br>
+                • 최종 결과: ${resultCount}개<br>
+                ${meta.timing_breakdown ? `
+                • 단계별 시간: 임베딩 ${meta.timing_breakdown.embed_ms || 0}ms, 
+                  검색 ${meta.timing_breakdown.search_ms || 0}ms
+                ` : ''}
+            `;
+            
+            document.getElementById('results').style.display = 'block';
+        }
+        
+        function showStatus(message, type) {
+            const statusDiv = document.getElementById('status');
+            statusDiv.innerHTML = message;
+            statusDiv.className = `status ${type}`;
+        }
+        
+        // Enter 키 검색 지원
+        document.getElementById('diagnosis').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchHospitals();
+            }
+        });
+        
+        // 페이지 로드 시 API 상태 확인
+        window.onload = async function() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/health`);
+                if (response.ok) {
+                    const health = await response.json();
+                    console.log('백엔드 상태:', health);
+                    showStatus('✅ 백엔드 서버가 정상적으로 연결되었습니다.', 'success');
+                } else {
+                    throw new Error('Health check failed');
+                }
+            } catch (error) {
+                showStatus('❌ 백엔드 서버에 연결할 수 없습니다. http://localhost:8002에서 서버가 실행중인지 확인해주세요.', 'error');
+            }
+        };
+    </script>
+</body>
+</html>

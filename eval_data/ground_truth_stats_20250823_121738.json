@@ -1,0 +1,474 @@
+{
+  "generated_at": "2025-08-23T12:17:38.086538",
+  "total_diseases": 61,
+  "total_queries": 61,
+  "disease_stats": {
+    "광선각화증": {
+      "total_hospitals": 3,
+      "primary_hospitals": 2,
+      "regions": [
+        "서울 은평",
+        "서울 강남",
+        "경기 수원"
+      ]
+    },
+    "피부병리": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "경기 수원"
+      ]
+    },
+    "조직검사": {
+      "total_hospitals": 2,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 성동",
+        "경기 수원"
+      ]
+    },
+    "광선치료": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "경기 수원"
+      ]
+    },
+    "냉동치료": {
+      "total_hospitals": 3,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 강남",
+        "경기 광명",
+        "경기 성남"
+      ]
+    },
+    "광역학치료": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 강남"
+      ]
+    },
+    "기저세포암": {
+      "total_hospitals": 4,
+      "primary_hospitals": 2,
+      "regions": [
+        "서울 종로",
+        "서울 송파",
+        "서울 성동",
+        "서울 동작"
+      ]
+    },
+    "다학제진료": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 송파"
+      ]
+    },
+    "악성피부암": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 종로"
+      ]
+    },
+    "다학제": {
+      "total_hospitals": 6,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 은평",
+        "서울 서대문",
+        "서울 종로",
+        "서울 성북",
+        "서울 동작"
+      ]
+    },
+    "선천성 멜라닌세포모반": {
+      "total_hospitals": 1,
+      "primary_hospitals": 1,
+      "regions": [
+        "서울 종로"
+      ]
+    },
+    "이토·오타모반": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 종로"
+      ]
+    },
+    "수술·레이저": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 종로"
+      ]
+    },
+    "멜라닌세포모반": {
+      "total_hospitals": 1,
+      "primary_hospitals": 1,
+      "regions": [
+        "경기 성남"
+      ]
+    },
+    "색소질환": {
+      "total_hospitals": 2,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 중구",
+        "경기 성남"
+      ]
+    },
+    "레이저": {
+      "total_hospitals": 5,
+      "primary_hospitals": 0,
+      "regions": [
+        "경기 광명",
+        "서울 강남",
+        "경기 수원",
+        "경기 성남"
+      ]
+    },
+    "보웬병": {
+      "total_hospitals": 2,
+      "primary_hospitals": 2,
+      "regions": [
+        "경기 고양",
+        "서울 은평"
+      ]
+    },
+    "전암성 병변": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "경기 고양"
+      ]
+    },
+    "맞춤치료": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "경기 고양"
+      ]
+    },
+    "비립종": {
+      "total_hospitals": 5,
+      "primary_hospitals": 1,
+      "regions": [
+        "서울 강남",
+        "서울 영등포",
+        "서울 강서"
+      ]
+    },
+    "한관종": {
+      "total_hospitals": 5,
+      "primary_hospitals": 1,
+      "regions": [
+        "서울 강남",
+        "서울 강서"
+      ]
+    },
+    "CO2레이저": {
+      "total_hospitals": 2,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 강남"
+      ]
+    },
+    "고주파": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 강서"
+      ]
+    },
+    "CO2": {
+      "total_hospitals": 3,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 강남",
+        "서울 강서"
+      ]
+    },
+    "편평사마귀": {
+      "total_hospitals": 1,
+      "primary_hospitals": 1,
+      "regions": [
+        "서울 영등포"
+      ]
+    },
+    "체리혈관종": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 영등포"
+      ]
+    },
+    "검버섯": {
+      "total_hospitals": 2,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 강남",
+        "서울 영등포"
+      ]
+    },
+    "쥐젖": {
+      "total_hospitals": 2,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 강남",
+        "서울 영등포"
+      ]
+    },
+    "점": {
+      "total_hospitals": 3,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 강남",
+        "서울 영등포",
+        "서울 관악"
+      ]
+    },
+    "사마귀": {
+      "total_hospitals": 1,
+      "primary_hospitals": 1,
+      "regions": [
+        "경기 성남"
+      ]
+    },
+    "티눈": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "경기 성남"
+      ]
+    },
+    "악성흑색종": {
+      "total_hospitals": 3,
+      "primary_hospitals": 2,
+      "regions": [
+        "서울 서대문",
+        "서울 성북",
+        "서울 동작"
+      ]
+    },
+    "면역항암": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 서대문"
+      ]
+    },
+    "희귀피부암": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 성북"
+      ]
+    },
+    "지루각화증": {
+      "total_hospitals": 2,
+      "primary_hospitals": 2,
+      "regions": [
+        "서울 강남"
+      ]
+    },
+    "잡티": {
+      "total_hospitals": 2,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 강남",
+        "서울 관악"
+      ]
+    },
+    "편평세포암": {
+      "total_hospitals": 2,
+      "primary_hospitals": 2,
+      "regions": [
+        "서울 성동",
+        "서울 동작"
+      ]
+    },
+    "수술": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 성동"
+      ]
+    },
+    "항암": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 성동"
+      ]
+    },
+    "표피낭종": {
+      "total_hospitals": 2,
+      "primary_hospitals": 2,
+      "regions": [
+        "서울 서초",
+        "서울 중구"
+      ]
+    },
+    "피지낭종": {
+      "total_hospitals": 2,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 서초",
+        "서울 중구"
+      ]
+    },
+    "지방종": {
+      "total_hospitals": 2,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 서초",
+        "서울 중구"
+      ]
+    },
+    "양성종양수술": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 서초"
+      ]
+    },
+    "미세절개": {
+      "total_hospitals": 2,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 서초",
+        "서울 중구"
+      ]
+    },
+    "피부섬유종": {
+      "total_hospitals": 2,
+      "primary_hospitals": 2,
+      "regions": [
+        "서울 은평",
+        "서울 서초"
+      ]
+    },
+    "진피섬유종": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 서초"
+      ]
+    },
+    "연조직종양": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 은평"
+      ]
+    },
+    "절제·재건": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 은평"
+      ]
+    },
+    "피지샘증식증": {
+      "total_hospitals": 2,
+      "primary_hospitals": 2,
+      "regions": [
+        "서울 강남",
+        "서울 강서"
+      ]
+    },
+    "RF": {
+      "total_hospitals": 2,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 강남",
+        "서울 강서"
+      ]
+    },
+    "재발억제": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 강서"
+      ]
+    },
+    "혈관종": {
+      "total_hospitals": 2,
+      "primary_hospitals": 2,
+      "regions": [
+        "서울 서대문",
+        "경기 수원"
+      ]
+    },
+    "혈관기형": {
+      "total_hospitals": 2,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 서대문",
+        "경기 수원"
+      ]
+    },
+    "외과": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "경기 수원"
+      ]
+    },
+    "화농육아종": {
+      "total_hospitals": 2,
+      "primary_hospitals": 2,
+      "regions": [
+        "경기 광명",
+        "서울 종로"
+      ]
+    },
+    "수부외과": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "경기 광명"
+      ]
+    },
+    "피부·연조직": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 종로"
+      ]
+    },
+    "외과적 절제": {
+      "total_hospitals": 1,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 종로"
+      ]
+    },
+    "모반": {
+      "total_hospitals": 1,
+      "primary_hospitals": 1,
+      "regions": [
+        "서울 관악"
+      ]
+    },
+    "흑색점": {
+      "total_hospitals": 2,
+      "primary_hospitals": 0,
+      "regions": [
+        "서울 관악",
+        "서울 중구"
+      ]
+    },
+    "난치성 모반": {
+      "total_hospitals": 1,
+      "primary_hospitals": 1,
+      "regions": [
+        "서울 중구"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+# FastAPI Backend Core Dependencies
+fastapi>=0.104.0
+uvicorn>=0.24.0
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+
+# Vector Database & Embeddings
+qdrant-client>=1.7.0
+openai>=1.3.0
+
+# RAG Pipeline Dependencies
+langchain>=0.2.0
+langchain-openai>=0.1.0
+rank-bm25>=0.2.2
+sentence-transformers>=2.2.0
+
+# Data Processing
+pandas>=1.5.0
+numpy>=1.24.0
+tqdm>=4.65.0
+
+# Visualization & Logging
+matplotlib>=3.7.0
