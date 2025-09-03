@@ -66,29 +66,19 @@ class QueryBuilder:
         logger = logging.getLogger(__name__)
         logger.info(f"🔍 Query Builder 입력: diagnosis='{diagnosis}', description='{description}', similar='{similar_diseases}'")
         
-        parts: List[str] = []
-        # diagnosis + synonyms
+        # 병원 검색에는 주진단명만 사용 (가장 정확한 매칭을 위해)
         expanded = self._expand_diagnosis(diagnosis)
         logger.info(f"📝 진단명 확장: {expanded}")
-        parts.extend(expanded)
         
-        # optional description
+        # 설명과 유사질환은 병원 검색에서 제외 (노이즈 방지)
         if description:
-            desc_normalized = self._normalize(description)
-            logger.info(f"📝 설명 추가: '{desc_normalized}'")
-            parts.append(desc_normalized)
-            
-        # optional similar diseases
+            logger.info(f"📝 설명 제외됨 (병원 검색 단순화): '{description}'")
         if similar_diseases:
-            for d in similar_diseases:
-                if d:
-                    normalized_disease = self._normalize(d)
-                    logger.info(f"📝 유사질환 추가: '{normalized_disease}'")
-                    parts.append(normalized_disease)
+            logger.info(f"📝 유사질환 제외됨 (병원 검색 단순화): {list(similar_diseases)}")
         
-        # join with newlines to bias semantic encoders
-        final_query = "\n".join(p for p in parts if p)
-        logger.info(f"✅ 최종 쿼리 구성: '{final_query}'")
+        # 진단명과 동의어만으로 쿼리 구성
+        final_query = "\n".join(expanded)
+        logger.info(f"✅ 최종 쿼리 구성 (진단명만): '{final_query}'")
         return final_query
 
     def extract_region_filter(self, user_input: str) -> Optional[str]:

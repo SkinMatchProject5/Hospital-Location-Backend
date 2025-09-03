@@ -1,0 +1,434 @@
+2025-08-28 10:04:09 | INFO     | app.core.logging:setup_logging:67 | 🔧 로깅 시스템 초기화 완료
+2025-08-28 10:04:09 | INFO     | app.core.logging:setup_logging:68 |    로그 레벨: INFO
+2025-08-28 10:04:09 | INFO     | app.core.logging:setup_logging:69 |    로그 파일: logs\hospital_backend.log
+2025-08-28 10:04:09 | INFO     | logging:callHandlers:1762 | 🏥 Hospital-Location-Backend 시작
+2025-08-28 10:04:09 | INFO     | logging:callHandlers:1762 |    포트: 8002
+2025-08-28 10:04:09 | INFO     | logging:callHandlers:1762 |    벡터DB: 
+2025-08-28 10:04:09 | INFO     | logging:callHandlers:1762 |    임베딩 모델: text-embedding-3-small
+2025-08-28 10:04:09 | ERROR    | logging:callHandlers:1762 | ❌ 검색 서비스 초기화 실패: cannot import name 'get_search_service' from 'app.services' (unknown location)
+2025-08-28 10:48:22 | INFO     | logging:callHandlers:1762 | 🔧 임베딩 서비스 초기화: text-embedding-3-small (차원: 1536)
+2025-08-28 10:48:22 | INFO     | logging:callHandlers:1762 | 🔧 Qdrant 서비스 초기화
+2025-08-28 10:48:22 | INFO     | logging:callHandlers:1762 |    URL: 
+2025-08-28 10:48:22 | INFO     | logging:callHandlers:1762 |    Children Collection: hospital_children
+2025-08-28 10:48:22 | INFO     | logging:callHandlers:1762 |    Parents Collection: hospital_parents
+2025-08-28 10:48:26 | INFO     | logging:callHandlers:1762 | 🔧 하이브리드 검색 엔진 초기화
+2025-08-28 10:48:26 | INFO     | logging:callHandlers:1762 |    코사인 가중치: 0.7
+2025-08-28 10:48:26 | INFO     | logging:callHandlers:1762 |    BM25 가중치: 0.3
+2025-08-28 10:48:26 | INFO     | logging:callHandlers:1762 | 🔧 검색 서비스 초기화 완료
+2025-08-28 10:48:26 | INFO     | logging:callHandlers:1762 | 🔍 병원 검색 요청 수신
+2025-08-28 10:48:26 | INFO     | logging:callHandlers:1762 | 🏥 병원 검색 요청 처리 시작
+2025-08-28 10:48:26 | INFO     | logging:callHandlers:1762 | 📄 받은 XML 내용: 
+    <root>
+        <label id_code="0" score="85.0">광선각화증</label>
+        <summary>자외선 노출이 많은 부위인 얼굴에 붉은색의 각질성 반점이 관찰됩니다.</summary>
+        <similar_labels>
+            <similar_label id_code="3" scor...
+2025-08-28 10:48:26 | INFO     | logging:callHandlers:1762 | XML 파싱 완료: 광선각화증 (신뢰도: 85.0)
+2025-08-28 10:48:26 | INFO     | logging:callHandlers:1762 | 🔍 하이브리드 검색 시작: 광선각화증
+2025-08-28 10:48:26 | INFO     | logging:callHandlers:1762 | Retrying request to /embeddings in 0.974861 seconds
+2025-08-28 10:48:27 | INFO     | logging:callHandlers:1762 | Retrying request to /embeddings in 1.946860 seconds
+2025-08-28 10:48:29 | ERROR    | logging:callHandlers:1762 | ❌ 임베딩 생성 실패: Connection error.
+2025-08-28 10:48:29 | ERROR    | logging:callHandlers:1762 | ❌ 코사인 검색 실패: 임베딩 생성 실패: Connection error.
+2025-08-28 10:48:29 | INFO     | logging:callHandlers:1762 | 👥 Parent 그룹핑: 0개 → 0개 (고유 Parent)
+2025-08-28 10:48:29 | WARNING  | logging:callHandlers:1762 | Parent ID가 없는 검색 결과
+2025-08-28 10:48:29 | INFO     | logging:callHandlers:1762 | ✅ 하이브리드 검색 완료: 0개 병원 (중복 제거 후)
+2025-08-28 10:48:29 | INFO     | logging:callHandlers:1762 | 📊 최종 변환된 병원 수: 0
+2025-08-28 10:48:29 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 0개 병원, 3031.3ms
+2025-08-28 10:48:29 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 0개 병원
+2025-08-28 10:50:45 | INFO     | logging:callHandlers:1762 | 🔍 병원 검색 요청 수신
+2025-08-28 10:50:45 | INFO     | logging:callHandlers:1762 | 🏥 병원 검색 요청 처리 시작
+2025-08-28 10:50:45 | INFO     | logging:callHandlers:1762 | 📄 받은 XML 내용: 
+    <root>
+        <label id_code="0" score="85.0">광선각화증</label>
+        <summary>자외선 노출이 많은 부위인 얼굴에 붉은색의 각질성 반점이 관찰됩니다.</summary>
+        <similar_labels>
+            <similar_label id_code="3" scor...
+2025-08-28 10:50:45 | INFO     | logging:callHandlers:1762 | XML 파싱 완료: 광선각화증 (신뢰도: 85.0)
+2025-08-28 10:50:45 | INFO     | logging:callHandlers:1762 | 🔍 하이브리드 검색 시작: 광선각화증
+2025-08-28 10:50:45 | INFO     | logging:callHandlers:1762 | Retrying request to /embeddings in 0.979276 seconds
+2025-08-28 10:50:46 | INFO     | logging:callHandlers:1762 | Retrying request to /embeddings in 1.616517 seconds
+2025-08-28 10:50:48 | ERROR    | logging:callHandlers:1762 | ❌ 임베딩 생성 실패: Connection error.
+2025-08-28 10:50:48 | ERROR    | logging:callHandlers:1762 | ❌ 코사인 검색 실패: 임베딩 생성 실패: Connection error.
+2025-08-28 10:50:48 | INFO     | logging:callHandlers:1762 | 👥 Parent 그룹핑: 0개 → 0개 (고유 Parent)
+2025-08-28 10:50:48 | WARNING  | logging:callHandlers:1762 | Parent ID가 없는 검색 결과
+2025-08-28 10:50:48 | INFO     | logging:callHandlers:1762 | ✅ 하이브리드 검색 완료: 0개 병원 (중복 제거 후)
+2025-08-28 10:50:48 | INFO     | logging:callHandlers:1762 | 📊 최종 변환된 병원 수: 0
+2025-08-28 10:50:48 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 0개 병원, 2670.7ms
+2025-08-28 10:50:48 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 0개 병원
+2025-08-28 10:55:46 | INFO     | logging:callHandlers:1762 | 🏥 Hospital-Location-Backend 종료
+2025-08-28 10:55:50 | INFO     | app.core.logging:setup_logging:67 | 🔧 로깅 시스템 초기화 완료
+2025-08-28 10:55:50 | INFO     | app.core.logging:setup_logging:68 |    로그 레벨: INFO
+2025-08-28 10:55:50 | INFO     | app.core.logging:setup_logging:69 |    로그 파일: logs/hospital_backend.log
+2025-08-28 10:55:50 | INFO     | logging:callHandlers:1762 | 🏥 Hospital-Location-Backend 시작
+2025-08-28 10:55:50 | INFO     | logging:callHandlers:1762 |    포트: 8002
+2025-08-28 10:55:50 | INFO     | logging:callHandlers:1762 |    벡터DB: https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333
+2025-08-28 10:55:50 | INFO     | logging:callHandlers:1762 |    임베딩 모델: text-embedding-3-small
+2025-08-28 10:55:50 | INFO     | logging:callHandlers:1762 | 🔧 임베딩 서비스 초기화: text-embedding-3-small (차원: 1536)
+2025-08-28 10:55:50 | INFO     | logging:callHandlers:1762 | 🔧 Qdrant 서비스 초기화
+2025-08-28 10:55:50 | INFO     | logging:callHandlers:1762 |    URL: https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333
+2025-08-28 10:55:50 | INFO     | logging:callHandlers:1762 |    Children Collection: derm_children
+2025-08-28 10:55:50 | INFO     | logging:callHandlers:1762 |    Parents Collection: derm_parents
+2025-08-28 10:55:50 | INFO     | logging:callHandlers:1762 | HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-08-28 10:55:50 | INFO     | logging:callHandlers:1762 | 🔧 하이브리드 검색 엔진 초기화
+2025-08-28 10:55:50 | INFO     | logging:callHandlers:1762 |    코사인 가중치: 0.5
+2025-08-28 10:55:50 | INFO     | logging:callHandlers:1762 |    BM25 가중치: 0.5
+2025-08-28 10:55:50 | INFO     | logging:callHandlers:1762 | 🔧 검색 서비스 초기화 완료
+2025-08-28 10:55:51 | INFO     | logging:callHandlers:1762 | HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2025-08-28 10:55:51 | ERROR    | logging:callHandlers:1762 | ❌ Qdrant 연결 실패: object CollectionsResponse can't be used in 'await' expression
+2025-08-28 10:55:51 | ERROR    | logging:callHandlers:1762 | ❌ 하이브리드 검색 엔진 초기화 실패: Qdrant 연결 실패
+2025-08-28 10:55:51 | ERROR    | logging:callHandlers:1762 | ❌ 검색 서비스 초기화 실패: 초기화 실패: Qdrant 연결 실패
+2025-08-28 10:55:51 | ERROR    | logging:callHandlers:1762 | ❌ 검색 서비스 초기화 실패: 초기화 실패: 초기화 실패: Qdrant 연결 실패
+2025-08-28 10:59:34 | INFO     | logging:callHandlers:1762 | 🏥 Hospital-Location-Backend 종료
+2025-08-28 10:59:40 | INFO     | app.core.logging:setup_logging:67 | 🔧 로깅 시스템 초기화 완료
+2025-08-28 10:59:40 | INFO     | app.core.logging:setup_logging:68 |    로그 레벨: INFO
+2025-08-28 10:59:40 | INFO     | app.core.logging:setup_logging:69 |    로그 파일: logs/hospital_backend.log
+2025-08-28 10:59:40 | INFO     | logging:callHandlers:1762 | 🏥 Hospital-Location-Backend 시작
+2025-08-28 10:59:40 | INFO     | logging:callHandlers:1762 |    포트: 8002
+2025-08-28 10:59:40 | INFO     | logging:callHandlers:1762 |    벡터DB: https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333
+2025-08-28 10:59:40 | INFO     | logging:callHandlers:1762 |    임베딩 모델: text-embedding-3-small
+2025-08-28 10:59:40 | INFO     | logging:callHandlers:1762 | 🔧 임베딩 서비스 초기화: text-embedding-3-small (차원: 1536)
+2025-08-28 10:59:40 | INFO     | logging:callHandlers:1762 | 🔧 Qdrant 서비스 초기화
+2025-08-28 10:59:40 | INFO     | logging:callHandlers:1762 |    URL: https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333
+2025-08-28 10:59:40 | INFO     | logging:callHandlers:1762 |    Children Collection: derm_children
+2025-08-28 10:59:40 | INFO     | logging:callHandlers:1762 |    Parents Collection: derm_parents
+2025-08-28 10:59:41 | INFO     | logging:callHandlers:1762 | HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-08-28 10:59:41 | INFO     | logging:callHandlers:1762 | 🔧 하이브리드 검색 엔진 초기화
+2025-08-28 10:59:41 | INFO     | logging:callHandlers:1762 |    코사인 가중치: 0.5
+2025-08-28 10:59:41 | INFO     | logging:callHandlers:1762 |    BM25 가중치: 0.5
+2025-08-28 10:59:41 | INFO     | logging:callHandlers:1762 | 🔧 검색 서비스 초기화 완료
+2025-08-28 10:59:41 | INFO     | logging:callHandlers:1762 | HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2025-08-28 10:59:41 | INFO     | logging:callHandlers:1762 | ✅ Qdrant 연결 성공: 3개 컬렉션
+2025-08-28 10:59:41 | INFO     | logging:callHandlers:1762 | HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2025-08-28 10:59:41 | INFO     | logging:callHandlers:1762 | ✅ Children 컬렉션 존재: derm_children
+2025-08-28 10:59:41 | INFO     | logging:callHandlers:1762 | ✅ Parents 컬렉션 존재: derm_parents
+2025-08-28 10:59:41 | INFO     | logging:callHandlers:1762 | ✅ 하이브리드 검색 엔진 초기화 완료
+2025-08-28 10:59:41 | INFO     | logging:callHandlers:1762 | ✅ 검색 서비스 준비 완료
+2025-08-28 10:59:41 | INFO     | logging:callHandlers:1762 | ✅ 검색 서비스 초기화 완료
+2025-08-28 11:02:02 | INFO     | logging:callHandlers:1762 | 🔍 병원 검색 요청 수신
+2025-08-28 11:02:02 | INFO     | logging:callHandlers:1762 | 🏥 병원 검색 요청 처리 시작
+2025-08-28 11:02:02 | INFO     | logging:callHandlers:1762 | 📄 받은 XML 내용: 
+    <root>
+        <label id_code="0" score="85.0">광선각화증</label>
+        <summary>자외선 노출이 많은 부위인 얼굴에 붉은색의 각질성 반점이 관찰됩니다.</summary>
+        <similar_labels>
+            <similar_label id_code="3" scor...
+2025-08-28 11:02:02 | INFO     | logging:callHandlers:1762 | XML 파싱 완료: 광선각화증 (신뢰도: 85.0)
+2025-08-28 11:02:02 | INFO     | logging:callHandlers:1762 | 🔍 하이브리드 검색 시작: 광선각화증
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/search "HTTP/1.1 200 OK"
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 | 🔧 BM25 인덱스 구축 완료: 24개 문서, 평균 길이 0.0
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 | 👥 Parent 그룹핑: 24개 → 14개 (고유 Parent)
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    1위: parent_gs_sev_derm (점수: 0.546198)
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    2위: parent_ajou_derm (점수: 0.485843)
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    3위: parent_apple_derm (점수: 0.456008)
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    4위: parent_the_seoul_derm (점수: 0.446852)
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    5위: parent_skinlover (점수: 0.442152)
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_parents/points "HTTP/1.1 400 Bad Request"
+2025-08-28 11:02:03 | ERROR    | logging:callHandlers:1762 | ❌ 포인트 조회 실패: Unexpected Response: 400 (Bad Request)
+Raw response content:
+b'{"status":{"error":"Format error in JSON body: value parent_gs_sev_derm is not a valid point ID, valid values are either an unsigned integer or a UUID at line 1 column 89"},"time":0.0}'
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 | ✅ 하이브리드 검색 완료: 2개 병원 (중복 제거 후)
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 | 🏥 추출된 병원 정보:
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    Name: 광선각화증 치료(강남세브란스)
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    Tell: None
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    Addr: None
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    URL: None
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    Specialties: ['광선각화증', 'Actinic keratosis', 'AK', '강남세브란스']
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    Score: 0.5461983
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 | 🏥 추출된 병원 정보:
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    Name: 광선각화증 감별·필드치료(아주대)
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    Tell: None
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    Addr: None
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    URL: None
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    Specialties: ['광선각화증', '일광각화증', 'Actinic keratosis', 'AK', '아주대']
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 |    Score: 0.48584324
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 | 📊 최종 변환된 병원 수: 2
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 2개 병원, 1765.4ms
+2025-08-28 11:02:03 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 2개 병원
+2025-08-28 11:02:55 | INFO     | logging:callHandlers:1762 | 🔍 병원 검색 요청 수신
+2025-08-28 11:02:55 | INFO     | logging:callHandlers:1762 | 🏥 병원 검색 요청 처리 시작
+2025-08-28 11:02:55 | INFO     | logging:callHandlers:1762 | 📄 받은 XML 내용: <root>
+    <diagnosis>피부섬유종</diagnosis>
+    <description>이미지에서는 작고 단단한 결절이 관찰되며, 중심부에 오목함(딤플 사인)이 있는 특징을 보입니다. 이 병변은 외상 후 섬유조직의 반응성 증식으로 발생하며, 대개 무통성입니다. 팔, 다리, 어깨 등에서 흔히 발생하며, 치료는 필요하지 않지만 원할 경우 절제가 ...
+2025-08-28 11:02:55 | ERROR    | logging:callHandlers:1762 | ❌ XML 파싱 오류: label 태그가 없습니다
+2025-08-28 11:02:55 | ERROR    | logging:callHandlers:1762 | ❌ 병원 검색 실패: XML 파싱 실패: label 태그가 없습니다
+2025-08-28 11:02:55 | INFO     | logging:callHandlers:1762 | 🔍 병원 검색 요청 수신
+2025-08-28 11:02:55 | INFO     | logging:callHandlers:1762 | 🏥 병원 검색 요청 처리 시작
+2025-08-28 11:02:55 | INFO     | logging:callHandlers:1762 | 📄 받은 XML 내용: <root>
+    <diagnosis>피부과</diagnosis>
+    
+    
+  </root>...
+2025-08-28 11:02:55 | ERROR    | logging:callHandlers:1762 | ❌ XML 파싱 오류: label 태그가 없습니다
+2025-08-28 11:02:55 | ERROR    | logging:callHandlers:1762 | ❌ 병원 검색 실패: XML 파싱 실패: label 태그가 없습니다
+2025-08-28 11:07:06 | INFO     | logging:callHandlers:1762 | 🔍 병원 검색 요청 수신
+2025-08-28 11:07:06 | INFO     | logging:callHandlers:1762 | 🏥 병원 검색 요청 처리 시작
+2025-08-28 11:07:06 | INFO     | logging:callHandlers:1762 | 📄 받은 XML 내용: <root>
+    <diagnosis>피부섬유종</diagnosis>
+    <description>상세 설명은 검색에 사용하지 않습니다.</description>
+</root>...
+2025-08-28 11:07:06 | ERROR    | logging:callHandlers:1762 | ❌ XML 파싱 오류: label 태그가 없습니다
+2025-08-28 11:07:06 | ERROR    | logging:callHandlers:1762 | ❌ 병원 검색 실패: XML 파싱 실패: label 태그가 없습니다
+2025-08-28 11:07:08 | INFO     | logging:callHandlers:1762 | 🔍 병원 검색 요청 수신
+2025-08-28 11:07:08 | INFO     | logging:callHandlers:1762 | 🏥 병원 검색 요청 처리 시작
+2025-08-28 11:07:08 | INFO     | logging:callHandlers:1762 | 📄 받은 XML 내용: <root>
+    <diagnosis>광선각화증</diagnosis>
+    <description>상세 설명은 검색에 사용하지 않습니다.</description>
+</root>...
+2025-08-28 11:07:08 | ERROR    | logging:callHandlers:1762 | ❌ XML 파싱 오류: label 태그가 없습니다
+2025-08-28 11:07:08 | ERROR    | logging:callHandlers:1762 | ❌ 병원 검색 실패: XML 파싱 실패: label 태그가 없습니다
+2025-08-28 11:07:10 | INFO     | logging:callHandlers:1762 | 🔍 병원 검색 요청 수신
+2025-08-28 11:07:10 | INFO     | logging:callHandlers:1762 | 🏥 병원 검색 요청 처리 시작
+2025-08-28 11:07:10 | INFO     | logging:callHandlers:1762 | 📄 받은 XML 내용: <root>
+    <diagnosis>아토피</diagnosis>
+    <description>상세 설명은 검색에 사용하지 않습니다.</description>
+</root>...
+2025-08-28 11:07:10 | ERROR    | logging:callHandlers:1762 | ❌ XML 파싱 오류: label 태그가 없습니다
+2025-08-28 11:07:10 | ERROR    | logging:callHandlers:1762 | ❌ 병원 검색 실패: XML 파싱 실패: label 태그가 없습니다
+2025-08-28 11:07:12 | INFO     | logging:callHandlers:1762 | 🔍 병원 검색 요청 수신
+2025-08-28 11:07:12 | INFO     | logging:callHandlers:1762 | 🏥 병원 검색 요청 처리 시작
+2025-08-28 11:07:12 | INFO     | logging:callHandlers:1762 | 📄 받은 XML 내용: <root>
+    <diagnosis>건선</diagnosis>
+    <description>상세 설명은 검색에 사용하지 않습니다.</description>
+</root>...
+2025-08-28 11:07:12 | ERROR    | logging:callHandlers:1762 | ❌ XML 파싱 오류: label 태그가 없습니다
+2025-08-28 11:07:12 | ERROR    | logging:callHandlers:1762 | ❌ 병원 검색 실패: XML 파싱 실패: label 태그가 없습니다
+2025-08-28 11:07:14 | INFO     | logging:callHandlers:1762 | 🔍 병원 검색 요청 수신
+2025-08-28 11:07:14 | INFO     | logging:callHandlers:1762 | 🏥 병원 검색 요청 처리 시작
+2025-08-28 11:07:14 | INFO     | logging:callHandlers:1762 | 📄 받은 XML 내용: <root>
+    <diagnosis>여드름</diagnosis>
+    <description>상세 설명은 검색에 사용하지 않습니다.</description>
+</root>...
+2025-08-28 11:07:14 | ERROR    | logging:callHandlers:1762 | ❌ XML 파싱 오류: label 태그가 없습니다
+2025-08-28 11:07:14 | ERROR    | logging:callHandlers:1762 | ❌ 병원 검색 실패: XML 파싱 실패: label 태그가 없습니다
+2025-08-28 11:07:28 | INFO     | logging:callHandlers:1762 | 🏥 Hospital-Location-Backend 종료
+2025-08-28 11:07:32 | INFO     | app.core.logging:setup_logging:67 | 🔧 로깅 시스템 초기화 완료
+2025-08-28 11:07:32 | INFO     | app.core.logging:setup_logging:68 |    로그 레벨: INFO
+2025-08-28 11:07:32 | INFO     | app.core.logging:setup_logging:69 |    로그 파일: logs/hospital_backend.log
+2025-08-28 11:07:32 | INFO     | logging:callHandlers:1762 | 🏥 Hospital-Location-Backend 시작
+2025-08-28 11:07:32 | INFO     | logging:callHandlers:1762 |    포트: 8002
+2025-08-28 11:07:32 | INFO     | logging:callHandlers:1762 |    벡터DB: https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333
+2025-08-28 11:07:32 | INFO     | logging:callHandlers:1762 |    임베딩 모델: text-embedding-3-small
+2025-08-28 11:07:32 | INFO     | logging:callHandlers:1762 | 🔧 임베딩 서비스 초기화: text-embedding-3-small (차원: 1536)
+2025-08-28 11:07:32 | INFO     | logging:callHandlers:1762 | 🔧 Qdrant 서비스 초기화
+2025-08-28 11:07:32 | INFO     | logging:callHandlers:1762 |    URL: https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333
+2025-08-28 11:07:32 | INFO     | logging:callHandlers:1762 |    Children Collection: derm_children
+2025-08-28 11:07:32 | INFO     | logging:callHandlers:1762 |    Parents Collection: derm_parents
+2025-08-28 11:07:32 | INFO     | logging:callHandlers:1762 | HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-08-28 11:07:32 | INFO     | logging:callHandlers:1762 | 🔧 하이브리드 검색 엔진 초기화
+2025-08-28 11:07:32 | INFO     | logging:callHandlers:1762 |    코사인 가중치: 0.5
+2025-08-28 11:07:32 | INFO     | logging:callHandlers:1762 |    BM25 가중치: 0.5
+2025-08-28 11:07:32 | INFO     | logging:callHandlers:1762 | 🔧 검색 서비스 초기화 완료
+2025-08-28 11:07:33 | INFO     | logging:callHandlers:1762 | HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2025-08-28 11:07:33 | INFO     | logging:callHandlers:1762 | ✅ Qdrant 연결 성공: 3개 컬렉션
+2025-08-28 11:07:33 | INFO     | logging:callHandlers:1762 | HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2025-08-28 11:07:33 | INFO     | logging:callHandlers:1762 | ✅ Children 컬렉션 존재: derm_children
+2025-08-28 11:07:33 | INFO     | logging:callHandlers:1762 | ✅ Parents 컬렉션 존재: derm_parents
+2025-08-28 11:07:33 | INFO     | logging:callHandlers:1762 | ✅ 하이브리드 검색 엔진 초기화 완료
+2025-08-28 11:07:33 | INFO     | logging:callHandlers:1762 | ✅ 검색 서비스 준비 완료
+2025-08-28 11:07:33 | INFO     | logging:callHandlers:1762 | ✅ 검색 서비스 초기화 완료
+2025-08-28 11:08:40 | INFO     | logging:callHandlers:1762 | 🔍 병원 검색 요청 수신
+2025-08-28 11:08:40 | INFO     | logging:callHandlers:1762 | 🏥 병원 검색 요청 처리 시작
+2025-08-28 11:08:40 | INFO     | logging:callHandlers:1762 | 📄 받은 XML 내용: <root>
+    <diagnosis>피부섬유종</diagnosis>
+    <description>이미지에서는 작고 단단한 결절이 관찰되며, 중심부에 오목함(딤플 사인)이 있는 특징적인 모양을 가지고 있습니다. 이 병변은 외상 후 섬유조직의 반응성 증식으로 발생하며, 대개 무통성입니다. 팔, 다리, 어깨 등에서 흔히 발생하며, 치료는 필요하지 않지만 원...
+2025-08-28 11:08:40 | INFO     | logging:callHandlers:1762 | XML 파싱 완료 (새 형식): 피부섬유종
+2025-08-28 11:08:40 | INFO     | logging:callHandlers:1762 | 🔍 하이브리드 검색 시작: 피부섬유종
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/search "HTTP/1.1 200 OK"
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 | 🔧 BM25 인덱스 구축 완료: 24개 문서, 평균 길이 0.0
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 | 👥 Parent 그룹핑: 24개 → 16개 (고유 Parent)
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    1위: parent_cmcep_soft_tissue (점수: 0.644698)
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    2위: parent_ozhean_df (점수: 0.609166)
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    3위: parent_flex_derm (점수: 0.426030)
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    4위: parent_asan_skin_cancer (점수: 0.423569)
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    5위: parent_ajou_derm (점수: 0.418753)
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_parents/points "HTTP/1.1 400 Bad Request"
+2025-08-28 11:08:41 | ERROR    | logging:callHandlers:1762 | ❌ 포인트 조회 실패: Unexpected Response: 400 (Bad Request)
+Raw response content:
+b'{"status":{"error":"Format error in JSON body: value parent_cmcep_soft_tissue is not a valid point ID, valid values are either an unsigned integer or a UUID at line 1 column 95"},"time":0.0}'
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 | ✅ 하이브리드 검색 완료: 2개 병원 (중복 제거 후)
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 | 🏥 추출된 병원 정보:
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    Name: 연조직종양 절제·재건(은평성모)
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    Tell: None
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    Addr: None
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    URL: None
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    Specialties: ['피부섬유종', 'Dermatofibroma', 'DF', '은평성모']
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    Score: 0.6446975
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 | 🏥 추출된 병원 정보:
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    Name: 피부섬유종 수술(오체안)
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    Tell: None
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    Addr: None
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    URL: None
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    Specialties: ['피부섬유종', 'Dermatofibroma', 'DF', '오체안']
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 |    Score: 0.6091657
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 | 📊 최종 변환된 병원 수: 2
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 2개 병원, 1726.7ms
+2025-08-28 11:08:41 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 2개 병원
+2025-08-28 11:11:30 | INFO     | logging:callHandlers:1762 | 🏥 Hospital-Location-Backend 종료
+2025-08-28 11:11:34 | INFO     | app.core.logging:setup_logging:67 | 🔧 로깅 시스템 초기화 완료
+2025-08-28 11:11:34 | INFO     | app.core.logging:setup_logging:68 |    로그 레벨: INFO
+2025-08-28 11:11:34 | INFO     | app.core.logging:setup_logging:69 |    로그 파일: logs/hospital_backend.log
+2025-08-28 11:11:34 | INFO     | logging:callHandlers:1762 | 🏥 Hospital-Location-Backend 시작
+2025-08-28 11:11:34 | INFO     | logging:callHandlers:1762 |    포트: 8002
+2025-08-28 11:11:34 | INFO     | logging:callHandlers:1762 |    벡터DB: https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333
+2025-08-28 11:11:34 | INFO     | logging:callHandlers:1762 |    임베딩 모델: text-embedding-3-small
+2025-08-28 11:11:34 | INFO     | logging:callHandlers:1762 | 🔧 임베딩 서비스 초기화: text-embedding-3-small (차원: 1536)
+2025-08-28 11:11:34 | INFO     | logging:callHandlers:1762 | 🔧 Qdrant 서비스 초기화
+2025-08-28 11:11:34 | INFO     | logging:callHandlers:1762 |    URL: https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333
+2025-08-28 11:11:34 | INFO     | logging:callHandlers:1762 |    Children Collection: derm_children
+2025-08-28 11:11:34 | INFO     | logging:callHandlers:1762 |    Parents Collection: derm_parents
+2025-08-28 11:11:35 | INFO     | logging:callHandlers:1762 | HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-08-28 11:11:35 | INFO     | logging:callHandlers:1762 | 🔧 하이브리드 검색 엔진 초기화
+2025-08-28 11:11:35 | INFO     | logging:callHandlers:1762 |    코사인 가중치: 0.5
+2025-08-28 11:11:35 | INFO     | logging:callHandlers:1762 |    BM25 가중치: 0.5
+2025-08-28 11:11:35 | INFO     | logging:callHandlers:1762 | 🔧 검색 서비스 초기화 완료
+2025-08-28 11:11:35 | INFO     | logging:callHandlers:1762 | HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2025-08-28 11:11:35 | INFO     | logging:callHandlers:1762 | ✅ Qdrant 연결 성공: 3개 컬렉션
+2025-08-28 11:11:35 | INFO     | logging:callHandlers:1762 | HTTP Request: GET https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2025-08-28 11:11:35 | INFO     | logging:callHandlers:1762 | ✅ Children 컬렉션 존재: derm_children
+2025-08-28 11:11:35 | INFO     | logging:callHandlers:1762 | ✅ Parents 컬렉션 존재: derm_parents
+2025-08-28 11:11:35 | INFO     | logging:callHandlers:1762 | ✅ 하이브리드 검색 엔진 초기화 완료
+2025-08-28 11:11:35 | INFO     | logging:callHandlers:1762 | ✅ 검색 서비스 준비 완료
+2025-08-28 11:11:35 | INFO     | logging:callHandlers:1762 | ✅ 검색 서비스 초기화 완료
+2025-08-28 11:14:24 | INFO     | logging:callHandlers:1762 | 🔍 병원 검색 요청 수신
+2025-08-28 11:14:24 | INFO     | logging:callHandlers:1762 | 🏥 병원 검색 요청 처리 시작
+2025-08-28 11:14:24 | INFO     | logging:callHandlers:1762 | 📄 받은 XML 내용: <root>
+    <diagnosis>피부섬유종</diagnosis>
+    <description>이미지에서는 작고 단단한 결절이 관찰되며, 중심부에 오목함(딤플 사인)이 있는 특징이 있습니다. 이 병변은 외상 후 섬유조직의 반응성 증식으로 발생하며, 대개 무통성입니다. 팔, 다리, 어깨 등에서 흔히 나타납니다. 치료는 필요하지 않지만, 원할 경우 절제...
+2025-08-28 11:14:24 | INFO     | logging:callHandlers:1762 | XML 파싱 완료 (새 형식): 피부섬유종
+2025-08-28 11:14:24 | INFO     | logging:callHandlers:1762 | 🔍 하이브리드 검색 시작: 피부섬유종
+2025-08-28 11:14:25 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/search "HTTP/1.1 200 OK"
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 | 🔧 BM25 인덱스 구축 완료: 24개 문서, 평균 길이 0.0
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 | 👥 Parent 그룹핑: 24개 → 16개 (고유 Parent)
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    1위: parent_cmcep_soft_tissue (점수: 0.644734)
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    2위: parent_ozhean_df (점수: 0.609113)
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    3위: parent_flex_derm (점수: 0.425864)
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    4위: parent_asan_skin_cancer (점수: 0.423407)
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    5위: parent_ajou_derm (점수: 0.418764)
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_parents/points/scroll "HTTP/1.1 200 OK"
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 | ✅ 하이브리드 검색 완료: 2개 병원 (중복 제거 후)
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 | 🏥 추출된 병원 정보:
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    Name: 가톨릭대학교 은평성모병원 피부 및 연조직종양클리닉
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    Tell: 1811-7750
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    Addr: 서울특별시 은평구 통일로 1021
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    URL: https://www.cmcep.or.kr/page/department/B/1336/1
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    Specialties: ['피부섬유종', 'Dermatofibroma', 'DF', '은평성모', '연조직종양', '절제·재건']
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    Score: 0.644734
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 | 🏥 추출된 병원 정보:
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    Name: 오체안성형외과(섬유종)
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    Tell: 02-547-5670
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    Addr: 서울 서초구 강남대로99길 9
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    URL: https://ozheanps.com/benign-tumor/dermatofibroma.php
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    Specialties: ['피부섬유종', 'Dermatofibroma', 'DF', '오체안', '진피섬유종', '미세절개']
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 |    Score: 0.6091129
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 | 📊 최종 변환된 병원 수: 2
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 2개 병원, 2266.8ms
+2025-08-28 11:14:26 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 2개 병원
+2025-08-28 11:18:23 | INFO     | logging:callHandlers:1762 | 🔍 병원 검색 요청 수신
+2025-08-28 11:18:23 | INFO     | logging:callHandlers:1762 | 🏥 병원 검색 요청 처리 시작
+2025-08-28 11:18:23 | INFO     | logging:callHandlers:1762 | 📄 받은 XML 내용: <root>
+    <diagnosis>편평세포암</diagnosis>
+    <description>이미지에서는 붉고 딱딱한 결절이 관찰되며, 표면에 궤양이 있는 것으로 보입니다. 이러한 병변은 자외선이나 화학적 자극 등으로 인해 발생할 수 있으며, 주변 조직으로 깊게 침습할 가능성이 있습니다. 또한 림프절 전이의 위험도 존재합니다. 조기에 절제하면 완치...
+2025-08-28 11:18:23 | INFO     | logging:callHandlers:1762 | XML 파싱 완료 (새 형식): 편평세포암
+2025-08-28 11:18:23 | INFO     | logging:callHandlers:1762 | 🔍 하이브리드 검색 시작: 편평세포암
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/search "HTTP/1.1 200 OK"
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 | 🔧 BM25 인덱스 구축 완료: 24개 문서, 평균 길이 0.0
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 | 👥 Parent 그룹핑: 24개 → 17개 (고유 Parent)
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    1위: parent_hyumc_derm (점수: 0.515167)
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    2위: parent_brmh_cancer_derm (점수: 0.462518)
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    3위: parent_snuh_cancer_derm (점수: 0.323684)
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    4위: parent_asan_skin_cancer (점수: 0.287197)
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    5위: parent_cmcep_skin_cancer (점수: 0.286484)
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_parents/points/scroll "HTTP/1.1 200 OK"
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 | ✅ 하이브리드 검색 완료: 2개 병원 (중복 제거 후)
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 | 🏥 추출된 병원 정보:
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    Name: 한양대학교병원 피부과
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    Tell: 02-2290-8114
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    Addr: 서울 성동구 왕십리로 222-1
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    URL: https://seoul.hyumc.com/
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    Specialties: ['편평세포암', 'Squamous cell carcinoma', 'SCC', '한양대', '기저세포암', '조직검사', '수술', '항암']
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    Score: 0.51516694
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 | 🏥 추출된 병원 정보:
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    Name: 서울대학교병원 보라매병원 피부암센터
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    Tell: 02-870-2114
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    Addr: 서울 동작구 보라매로5길 20
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    URL: https://cancer.brmh.org
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    Specialties: ['편평세포암', 'Squamous cell carcinoma', 'SCC', '보라매', '기저세포암', '악성흑색종', '다학제']
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 |    Score: 0.46251813
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 | 📊 최종 변환된 병원 수: 2
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 2개 병원, 1363.9ms
+2025-08-28 11:18:24 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 2개 병원
+2025-08-28 11:18:56 | INFO     | logging:callHandlers:1762 | 🔍 병원 검색 요청 수신
+2025-08-28 11:18:56 | INFO     | logging:callHandlers:1762 | 🏥 병원 검색 요청 처리 시작
+2025-08-28 11:18:56 | INFO     | logging:callHandlers:1762 | 📄 받은 XML 내용: <root>
+    <diagnosis>표피낭종</diagnosis>
+    <description>이미지에서는 둥글고 부드러운 낭종성 결절이 관찰됩니다. 이 병변은 피지선 배출구의 폐쇄로 인해 케라틴이 축적되어 발생하며, 일반적으로 무통성입니다. 염증이 동반될 경우 발적이나 압통이 있을 수 있으며, 감염 시에는 발적, 통증, 및 압통이 증가할 수 있습니다...
+2025-08-28 11:18:56 | INFO     | logging:callHandlers:1762 | XML 파싱 완료 (새 형식): 표피낭종
+2025-08-28 11:18:56 | INFO     | logging:callHandlers:1762 | 🔍 하이브리드 검색 시작: 표피낭종
+2025-08-28 11:18:56 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/search "HTTP/1.1 200 OK"
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 | 🔧 BM25 인덱스 구축 완료: 24개 문서, 평균 길이 0.0
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 | 👥 Parent 그룹핑: 24개 → 14개 (고유 Parent)
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    1위: parent_ozhean_ps (점수: 0.667301)
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    2위: parent_amun_ps (점수: 0.613523)
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    3위: parent_cmcep_soft_tissue (점수: 0.367560)
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    4위: parent_korea_anam_melanoma (점수: 0.354879)
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    5위: parent_flex_derm (점수: 0.346252)
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_parents/points/scroll "HTTP/1.1 200 OK"
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 | ✅ 하이브리드 검색 완료: 2개 병원 (중복 제거 후)
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 | 🏥 추출된 병원 정보:
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    Name: 오체안성형외과
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    Tell: 02-547-5670
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    Addr: 서울 서초구 강남대로99길 9
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    URL: https://ozheanps.com
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    Specialties: ['표피낭종', 'Epidermal cyst', 'Epidermoid cyst', '오체안', '피지낭종', '지방종', '양성종양수술']
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    Score: 0.6673013
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 | 🏥 추출된 병원 정보:
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    Name: 아문성형외과
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    Tell: 02-2237-8884
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    Addr: 서울 중구 다산로 182
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    URL: http://amunhospital.com/sub/sub05_02.php
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    Specialties: ['표피낭종', 'Epidermal cyst', 'Epidermoid cyst', '아문', '피지낭종', '지방종', '미세절개']
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 |    Score: 0.6135226
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 | 📊 최종 변환된 병원 수: 2
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 2개 병원, 1362.5ms
+2025-08-28 11:18:57 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 2개 병원
+2025-08-28 11:19:43 | INFO     | logging:callHandlers:1762 | 🔍 병원 검색 요청 수신
+2025-08-28 11:19:43 | INFO     | logging:callHandlers:1762 | 🏥 병원 검색 요청 처리 시작
+2025-08-28 11:19:43 | INFO     | logging:callHandlers:1762 | 📄 받은 XML 내용: <root>
+    <diagnosis>사마귀</diagnosis>
+    <description>이미지에서는 손 掌에 작은 둥근 형태의 단단한 결절이 관찰됩니다. 이 병변은 인유두종 바이러스(HPV) 감염에 의해 발생하며, 주로 손이나 발, 무릎 등 압박 부위에 나타납니다. 대개 무통성이며, 미용적인 이유로 제거를 원할 수 있습니다.</descriptio...
+2025-08-28 11:19:43 | INFO     | logging:callHandlers:1762 | XML 파싱 완료 (새 형식): 사마귀
+2025-08-28 11:19:43 | INFO     | logging:callHandlers:1762 | 🔍 하이브리드 검색 시작: 사마귀
+2025-08-28 11:19:43 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_children/points/search "HTTP/1.1 200 OK"
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 | 🔧 BM25 인덱스 구축 완료: 24개 문서, 평균 길이 0.0
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 | 👥 Parent 그룹핑: 24개 → 16개 (고유 Parent)
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    1위: parent_oracle_bundang (점수: 0.481297)
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    2위: parent_saryeoni (점수: 0.471422)
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    3위: parent_snuh_child_nevus (점수: 0.256778)
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    4위: parent_asan_skin_cancer (점수: 0.244107)
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    5위: parent_hyumc_derm (점수: 0.236819)
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 | HTTP Request: POST https://95405829-d915-45ba-a38a-3b3a9817d244.us-west-1-0.aws.cloud.qdrant.io:6333/collections/derm_parents/points/scroll "HTTP/1.1 200 OK"
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 | ✅ 하이브리드 검색 완료: 2개 병원 (중복 제거 후)
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 | 🏥 추출된 병원 정보:
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    Name: 오라클피부과(분당)
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    Tell: 031-711-5882
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    Addr: 경기 성남시 분당구 성남대로53번길 17 6층
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    URL: https://oracle2u.com/
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    Specialties: ['사마귀', 'Wart', 'Verruca', '오라클 분당', '티눈', '냉동치료', '레이저']
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    Score: 0.48129678
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 | 🏥 추출된 병원 정보:
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    Name: 사려니의원
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    Tell: 02-2671-3041
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    Addr: 서울특별시 영등포구 문래로 180 208,209호
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    URL: https://saryeoni-clinic.com/
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    Specialties: ['사마귀', 'Wart', 'Verruca', '사려니', '편평사마귀', '체리혈관종', '검버섯', '쥐젖', '비립종']
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 |    Score: 0.47142202
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 | 📊 최종 변환된 병원 수: 2
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 2개 병원, 1656.5ms
+2025-08-28 11:19:44 | INFO     | logging:callHandlers:1762 | ✅ 병원 검색 완료: 2개 병원
+2025-08-28 14:47:46 | INFO     | logging:callHandlers:1762 | 🏥 Hospital-Location-Backend 종료

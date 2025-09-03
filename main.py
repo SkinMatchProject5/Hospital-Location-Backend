@@ -203,6 +203,7 @@ async def search_ft_xml(request: SearchFTXMLRequest):
         # 1. XML 파싱
         with timer.time_step("embed"):
             logger.info(f"[{request_id}] XML 파싱 시작...")
+            logger.info(f"[{request_id}] 🔍 수신된 XML: {request.xml}")
             parsed_output = parse_ft_xml_to_model_output(request.xml)
             
             if not parsed_output:
@@ -211,6 +212,10 @@ async def search_ft_xml(request: SearchFTXMLRequest):
             diagnosis = parsed_output.get("diagnosis") or parsed_output.get("disease") or ""
             description = parsed_output.get("description") or parsed_output.get("notes")
             similar = parsed_output.get("similar_diseases") or parsed_output.get("aliases") or []
+            
+            logger.info(f"[{request_id}] 🔍 파싱된 진단명: '{diagnosis}'")
+            logger.info(f"[{request_id}] 🔍 파싱된 설명: '{description}'")
+            logger.info(f"[{request_id}] 🔍 파싱된 유사질환: {similar}")
         
         # 2. 파이프라인 실행 - 각 단계별 시간 측정
         pipeline: HospitalRAGPipeline = app_state["pipeline"]
@@ -236,6 +241,15 @@ async def search_ft_xml(request: SearchFTXMLRequest):
         results = results_data.get("results", [])
         response_meta = results_data.get("meta", {})
         success = True
+        
+        # 실제 반환되는 병원 데이터 로깅
+        logger.info(f"🚫 리랭킹 비활성화 - 원래 순서 유지 (상위 {len(results)}개)")
+        for i, result in enumerate(results):
+            hospital_name = result.get("parent", {}).get("name", "알 수 없는 병원")
+            logger.info(f"[{request_id}] 병원 {i+1}: {hospital_name}")
+        
+        if len(results) > 0:
+            logger.info(f"[{request_id}] 첫 번째 병원 전체 데이터: {results[0]}")
         
         # 성능 모니터링에 기록
         elapsed_ms = timer.get_timings().get("total_ms", 0)
